@@ -4,7 +4,8 @@ The "*ReactivePipeline*" project is a simple interface, a single class project.
 
 The `ReactiveContext` class just contains the static methods we need to instantiate the necessary objects for creating a persistent Flux pipeline for your whole application.
 We will see each of them.
-Nevertheless, these methods do not 
+Nevertheless, these methods / objects are not the only ones that are required to build a reactive app.
+The secon part
 
 
     static Pipeline createPipeline(String pipelineName, Set<Task> allTasks)
@@ -25,6 +26,6 @@ Nevertheless, these methods do not
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MjgwNDA3MiwxMDQ5MDY2MzM0LC01ND
-g2MjIzNzVdfQ==
+eyJoaXN0b3J5IjpbLTE4MjU5MTQ0NDYsMTA0OTA2NjMzNCwtNT
+Q4NjIyMzc1XX0=
 -->
