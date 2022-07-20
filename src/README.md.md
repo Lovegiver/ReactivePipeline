@@ -15,7 +15,8 @@ Most of the time, we use to design and build apps containing methods which are t
 But we can also imagine operations as a tree in which methods A and B are independant, so parallelized, and both producing a result which C deserves. In such a case, the C function will take result_A and result_B as arguments and we'll have to synchronize both operations in order to pass their respective results to C : C(result_A, result_B)
 Or, at the opposite, a A function producing a result_A which will be consumed in a parallelized manner by B and C as soon as it will be available : B(result_A) // C(result_A)
 
-To face all of these situations, we need a flexible data-structure where data - thus functions producing these data - will be organized. 
+To face all of these situations, we need a flexible data-structure where data - thus functions producing these data - will be organized smartly. Wrappers has been used for this to be possible.
+
 
 
 ## Objects from ReactiveContext
@@ -45,6 +46,6 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI2Njg4MzkxLDU1NDczMDU4NywxMDQ5MD
-Y2MzM0LC01NDg2MjIzNzVdfQ==
+eyJoaXN0b3J5IjpbMjAxNTAxMzY5NCw1NTQ3MzA1ODcsMTA0OT
+A2NjMzNCwtNTQ4NjIyMzc1XX0=
 -->
