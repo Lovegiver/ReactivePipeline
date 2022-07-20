@@ -10,9 +10,12 @@ So the second part of this README will present you all the objects needed to mak
 
 ## How things may happen, how it will work
 
-Most of the time, we use to design and build apps containing methods which are triggered sequencialy in a very procedural way. This can be represented by a straight line of processing operations.
+Most of the time, we use to design and build apps containing methods which are triggered sequencialy in a very procedural way. This can be represented by a straight line of processing operations : A --> B --> C --> ...
 
 But we can also imagine operations as a tree.
+A ----
+		B
+C --/
 
 ## Objects from ReactiveContext
 
@@ -41,6 +44,6 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NTI2MzE0OSw1NTQ3MzA1ODcsMTA0OT
-A2NjMzNCwtNTQ4NjIyMzc1XX0=
+eyJoaXN0b3J5IjpbLTExNzk4OTg3MTQsNTU0NzMwNTg3LDEwND
+kwNjYzMzQsLTU0ODYyMjM3NV19
 -->
