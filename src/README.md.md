@@ -8,9 +8,12 @@ We will see each of them in the first part of this document.
 Nevertheless, these methods / objects are not the only ones that are required to build a reactive app.
 So the second part of this README will present you all the objects needed to make this API complete and working.
 
+## How things may happe
+
 ## Objects from ReactiveContext
 
-Many objects we'll talk about are wrappers. It is important to understand how they interact 
+Many objects we'll talk about are wrappers. It is important to understand how they interact with each others.
+
 
 ### The Pipeline
 
@@ -34,6 +37,6 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU0OTg0NTE0LDU1NDczMDU4NywxMDQ5MD
-Y2MzM0LC01NDg2MjIzNzVdfQ==
+eyJoaXN0b3J5IjpbMTMyMTU4NDg2Miw1NTQ3MzA1ODcsMTA0OT
+A2NjMzNCwtNTQ4NjIyMzc1XX0=
 -->
