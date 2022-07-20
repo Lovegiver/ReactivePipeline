@@ -8,10 +8,10 @@ We will see each of them in the first part of this document.
 Nevertheless, these methods / objects are not the only ones that are required to build a reactive app.
 So the second part of this README will present you all the objects needed to make this API complete and working.
 
-## How things may happen
+## How things may happen, how it will work
 
-Most of the time, we use to design and build apps containing methods which are triggered sequencialy in a very procedural way.
-This can be represented by a straight line of processing operations
+Most of the time, we use to design and build apps containing methods which are triggered sequencialy in a very procedural way. This can be represented by a straight line of processing operations.
+But we can also imagine a tree of operations
 
 ## Objects from ReactiveContext
 
@@ -40,6 +40,6 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDcxODg4ODUwLDU1NDczMDU4NywxMDQ5MD
-Y2MzM0LC01NDg2MjIzNzVdfQ==
+eyJoaXN0b3J5IjpbNDE2NDg5NzYsNTU0NzMwNTg3LDEwNDkwNj
+YzMzQsLTU0ODYyMjM3NV19
 -->
