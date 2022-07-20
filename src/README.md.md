@@ -13,7 +13,8 @@ So the second part of this README will present you all the objects needed to mak
 Most of the time, we use to design and build apps containing methods which are triggered sequencialy in a very procedural way. This can be represented by a straight line of processing operations : A --> B --> C --> ...
 
 But we can also imagine operations as a tree in which methods A and B are independant, so parallelized, and both producing a result which C deserves. In such a case, the C function will take result_A and result_B as arguments and we'll have to synchronize both operations in order to pass their respective results to C.
-Or, at the 
+Or, at the opposite, a A function producing a result_A which will be consumed by B and C as soon as it will be available.
+
 
 ## Objects from ReactiveContext
 
@@ -42,6 +43,6 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjI3ODQ4MTgsNTU0NzMwNTg3LDEwND
-kwNjYzMzQsLTU0ODYyMjM3NV19
+eyJoaXN0b3J5IjpbLTcyNzM0OTU0OSw1NTQ3MzA1ODcsMTA0OT
+A2NjMzNCwtNTQ4NjIyMzc1XX0=
 -->
