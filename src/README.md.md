@@ -10,9 +10,11 @@ So the second part of this README will present you all the objects needed to mak
 
 ## Objects from ReactiveContext
 
+Many objects we'll talk about are wrappers. It is important to understand how they interact 
+
 ### The Pipeline
 
-The Pipeline 
+The Pipeline class is a wrapper for 
 
     static Pipeline createPipeline(String pipelineName, Set<Task> allTasks)
 
@@ -32,6 +34,6 @@ The Pipeline
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MDA3OTcyMCw1NTQ3MzA1ODcsMTA0OT
-A2NjMzNCwtNTQ4NjIyMzc1XX0=
+eyJoaXN0b3J5IjpbNDU0OTg0NTE0LDU1NDczMDU4NywxMDQ5MD
+Y2MzM0LC01NDg2MjIzNzVdfQ==
 -->
