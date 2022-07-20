@@ -10,6 +10,9 @@ So the second part of this README will present you all the objects needed to mak
 
 ## Objects from ReactiveContext
 
+### The Pipeline
+
+The Pipeline 
 
     static Pipeline createPipeline(String pipelineName, Set<Task> allTasks)
 
@@ -29,6 +32,6 @@ So the second part of this README will present you all the objects needed to mak
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU0NzMwNTg3LDEwNDkwNjYzMzQsLTU0OD
-YyMjM3NV19
+eyJoaXN0b3J5IjpbLTQ2MDA3OTcyMCw1NTQ3MzA1ODcsMTA0OT
+A2NjMzNCwtNTQ4NjIyMzc1XX0=
 -->
