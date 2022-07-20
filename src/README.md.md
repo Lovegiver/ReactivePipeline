@@ -25,10 +25,10 @@ So the second part of this README will present you all the objects needed to mak
 
     static Flux<ServerSentEvent<String>> getSinglePipelineStatesFlux(Pipeline pipeline)
 
-
+## Other usefull objects
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NDg1NjY1MSwxMDQ5MDY2MzM0LC01ND
-g2MjIzNzVdfQ==
+eyJoaXN0b3J5IjpbNTU0NzMwNTg3LDEwNDkwNjYzMzQsLTU0OD
+YyMjM3NV19
 -->
