@@ -24,19 +24,13 @@ To face all of these situations, we need a flexible data-structure where data - 
 Many objects we'll talk about are wrappers. It is important to understand how they interact with each others.
 
  1. `Operation` is the corner stone of our model. It is a `Functional
-    Interface`. Each action, each method, each function, has to be an
-    Operation. An Operation takes a *varargs* of Flux as arguments and
-    produces a Flux. 
+    Interface`. Each action, each method, each function, has to be an Operation. An Operation takes a *varargs* of Flux as arguments and produces a Flux. 
     
- 2. Task wraps a single Operation. It is a class with some usefull
-    properties and methods. It triggers Operation execution
-        and inject the produced Flux into the next Operation to maintain the reactiveness. 
+ 2. Task wraps a single Operation. It is a class with some usefull properties and methods. It triggers Operation execution
+        and inject the produced Flux into the next Operation to maintain the reactive behavior. 
         
- 3. WorkGroup is a wrapper for a set of Tasks, but you
-        won't use it directly. You will use it only if you decide to create
-        your own Optimizer. If you rely on the default Optimizer, the
-        Pipeline will create WorkGroups for you. All you have to understand
-        about a WorkGroup is that it groups all Tasks involved into the
+ 3. WorkGroup is a wrapper for a set of Tasks, but you won't use it directly. You will use it only if you decide to create
+        your own Optimizer. If you rely on the default Optimizer, the Pipeline will create WorkGroups for you. All you have to understand about a WorkGroup is that it groups all Tasks involved into the
         realization of a common final Operation.
         
  4. Finally, the Pipeline is a wrapper for a set of Tasks (and also for
@@ -71,7 +65,8 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3Mzc1NzA0NiwtOTk3NTA1NSw5MDY1OD
-M1ODMsLTIwODA0NDMyMTYsNzE0MjQ1MTAxLDIwMTUwMTM2OTQs
-NTU0NzMwNTg3LDEwNDkwNjYzMzQsLTU0ODYyMjM3NV19
+eyJoaXN0b3J5IjpbLTEzMzU4MjM0MTUsLTI3Mzc1NzA0NiwtOT
+k3NTA1NSw5MDY1ODM1ODMsLTIwODA0NDMyMTYsNzE0MjQ1MTAx
+LDIwMTUwMTM2OTQsNTU0NzMwNTg3LDEwNDkwNjYzMzQsLTU0OD
+YyMjM3NV19
 -->
