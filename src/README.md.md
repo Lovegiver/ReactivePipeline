@@ -23,10 +23,10 @@ To face all of these situations, we need a flexible data-structure where data - 
 
 Many objects we'll talk about are wrappers. It is important to understand how they interact with each others.
 
-Operation is the corner stone of our model. It is a Functional Interface.
+Operation is the corner stone of our model. It is a Functional Interface. Each action, each method, each function, has to be an Operation.
 Task wraps a single Operation. It is a class with some usefull properties.
 WorkGroup is a wrapper for a set of Tasks, but you won't use it directly. You will use it only if you decide to create your own Optimizer. If you rely on the default Optimizer, the Pipeline will create WorkGroups for you.
-Finally, the Pipeline is a wrapper for a set of Tasks (and also for one or 
+Finally, the Pipeline is a wrapper for a set of Tasks (and also for one or more WorkGroups).
 
 ### The Pipeline
 
@@ -50,6 +50,6 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0OTM0OTk4LDIwMTUwMTM2OTQsNTU0Nz
+eyJoaXN0b3J5IjpbNzE0MjQ1MTAxLDIwMTUwMTM2OTQsNTU0Nz
 MwNTg3LDEwNDkwNjYzMzQsLTU0ODYyMjM3NV19
 -->
