@@ -31,7 +31,7 @@ Finally, the Pipeline is a wrapper for a set of Tasks (and also for one or more 
 The global philosophy is :
 
  1. We create all necessary Operations. Try to think this object as a pure function, doing just one thing.
- 2. Each Operation is wrapped in a Task object. To be instantiated, a Task must have a single Operation and a Set
+ 2. Each Operation is wrapped in a Task object. To be instantiated, a Task must have a single Operation and a Set of all the previous Tasks 
 
 ### The Pipeline
 
@@ -55,7 +55,7 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjY3OTk2MzUsNzE0MjQ1MTAxLDIwMT
-UwMTM2OTQsNTU0NzMwNTg3LDEwNDkwNjYzMzQsLTU0ODYyMjM3
-NV19
+eyJoaXN0b3J5IjpbMTgzMDY4MTg1Myw3MTQyNDUxMDEsMjAxNT
+AxMzY5NCw1NTQ3MzA1ODcsMTA0OTA2NjMzNCwtNTQ4NjIyMzc1
+XX0=
 -->
