@@ -25,7 +25,7 @@ Many objects we'll talk about are wrappers. It is important to understand how th
 
 Operation is the corner stone of our model. It is a Functional Interface.
 Task wraps a single Operation. It is a class with some usefull properties.
-
+WorkGroup is a wrapper for a set of Tasks, but you won't use it directly. You will use it only if you decide to create your own 
 
 ### The Pipeline
 
@@ -49,6 +49,6 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MzgyMjM5LDIwMTUwMTM2OTQsNTU0Nz
+eyJoaXN0b3J5IjpbMjQ4MTU4OTE4LDIwMTUwMTM2OTQsNTU0Nz
 MwNTg3LDEwNDkwNjYzMzQsLTU0ODYyMjM3NV19
 -->
