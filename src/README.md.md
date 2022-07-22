@@ -32,7 +32,7 @@ The global philosophy is :
 
  1. We create all necessary Operations. Try to think this object as a pure function, doing just one thing.
  2. Each Operation is wrapped in a Task object. To be instantiated, a Task must have a single Operation and a Set of all the previous Tasks whom produced Fluxes are arguments for this Task.
- 3. All the Tasks will finally be used as arguments for a Pipeline. The Pipeline, thanks to its Optimizer, create one or more WorkGro
+ 3. All the Tasks will finally be used as arguments for a Pipeline. The Pipeline, thanks to its Optimizer, create one or more WorkGroups. Once this is made, all WorkGroups will be executed in parallel threads and in an asynchronous manner.
 
 ### The Pipeline
 
@@ -56,7 +56,7 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU2MTQzNzAwLDkwNjU4MzU4MywtMjA4MD
-Q0MzIxNiw3MTQyNDUxMDEsMjAxNTAxMzY5NCw1NTQ3MzA1ODcs
-MTA0OTA2NjMzNCwtNTQ4NjIyMzc1XX0=
+eyJoaXN0b3J5IjpbLTk5NzUwNTUsOTA2NTgzNTgzLC0yMDgwND
+QzMjE2LDcxNDI0NTEwMSwyMDE1MDEzNjk0LDU1NDczMDU4Nywx
+MDQ5MDY2MzM0LC01NDg2MjIzNzVdfQ==
 -->
