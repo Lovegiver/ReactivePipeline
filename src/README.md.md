@@ -1,8 +1,8 @@
 # Reactive pipeline : the App
 
-The "*ReactivePipeline*" project is a simple interface, a single class project. You can find link to the Github repository mentionned in Part. #1 of this article.
+The "*ReactivePipeline*" project is a simple interface, a single class project. You can find link to the Github repository in Part. #1 of this post.
 
-The `ReactiveContext` class just contains the static methods we need to instantiate the necessary objects for creating a persistent Flux pipeline for your whole application.
+The `ReactiveContext` class just contains the *static methods* we need to instantiate the necessary objects for creating a persistent Flux pipeline for your whole application.
 We will see each of them in the first part of this document.
 
 Nevertheless, these methods / objects are not the only ones that are required to build a reactive app.
@@ -56,7 +56,7 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU0Njg3MDg4LC05OTc1MDU1LDkwNjU4Mz
-U4MywtMjA4MDQ0MzIxNiw3MTQyNDUxMDEsMjAxNTAxMzY5NCw1
-NTQ3MzA1ODcsMTA0OTA2NjMzNCwtNTQ4NjIyMzc1XX0=
+eyJoaXN0b3J5IjpbLTIxMzQ5ODUzMzEsLTk5NzUwNTUsOTA2NT
+gzNTgzLC0yMDgwNDQzMjE2LDcxNDI0NTEwMSwyMDE1MDEzNjk0
+LDU1NDczMDU4NywxMDQ5MDY2MzM0LC01NDg2MjIzNzVdfQ==
 -->
