@@ -26,12 +26,13 @@ Many objects we'll talk about are wrappers. It is important to understand how th
 Operation is the corner stone of our model. It is a Functional Interface. Each action, each method, each function, has to be an Operation. An Operation takes a varargs of Flux as arguments and produces a Flux.
 Task wraps a single Operation. It is a class with some usefull properties.
 WorkGroup is a wrapper for a set of Tasks, but you won't use it directly. You will use it only if you decide to create your own Optimizer. If you rely on the default Optimizer, the Pipeline will create WorkGroups for you.
-Finally, the Pipeline is a wrapper for a set of Tasks (and also for one or more WorkGroups).
+Finally, the Pipeline is a wrapper for a set of Tasks (and also for one or more WorkGroups as it will dispatch all the tasks in different workgroups).
 
 The global philosophy is :
 
  1. We create all necessary Operations. Try to think this object as a pure function, doing just one thing.
  2. Each Operation is wrapped in a Task object. To be instantiated, a Task must have a single Operation and a Set of all the previous Tasks whom produced Fluxes are arguments for this Task.
+ 3. 
 
 ### The Pipeline
 
@@ -55,7 +56,7 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MzYxMTYxNSw3MTQyNDUxMDEsMjAxNT
-AxMzY5NCw1NTQ3MzA1ODcsMTA0OTA2NjMzNCwtNTQ4NjIyMzc1
-XX0=
+eyJoaXN0b3J5IjpbLTIwODA0NDMyMTYsNzE0MjQ1MTAxLDIwMT
+UwMTM2OTQsNTU0NzMwNTg3LDEwNDkwNjYzMzQsLTU0ODYyMjM3
+NV19
 -->
