@@ -25,14 +25,14 @@ Many objects we'll talk about are wrappers. It is important to understand how th
 
 Operation is the corner stone of our model. It is a Functional Interface. Each action, each method, each function, has to be an Operation. An Operation takes a varargs of Flux as arguments and produces a Flux.
 Task wraps a single Operation. It is a class with some usefull properties and methods. It triggers Operation execution and inject the produced Flux into the next Operation to maintain the reactiveness.
-WorkGroup is a wrapper for a set of Tasks, but you won't use it directly. You will use it only if you decide to create your own Optimizer. If you rely on the default Optimizer, the Pipeline will create WorkGroups for you. All you have to understand about a WorkGroup is that it groups all Tasks involved into the realization of a 
+WorkGroup is a wrapper for a set of Tasks, but you won't use it directly. You will use it only if you decide to create your own Optimizer. If you rely on the default Optimizer, the Pipeline will create WorkGroups for you. All you have to understand about a WorkGroup is that it groups all Tasks involved into the realization of a common final Operation.
 Finally, the Pipeline is a wrapper for a set of Tasks (and also for one or more WorkGroups as it will dispatch all the tasks in different workgroups).
 
 The global philosophy is :
 
  1. We create all necessary Operations. Try to think this object as a pure function, doing just one thing.
  2. Each Operation is wrapped in a Task object. To be instantiated, a Task must have a single Operation and a Set of all the previous Tasks whom produced Fluxes are arguments for this Task.
- 3. All the Tasks will finally be used as arguments for a Pipeline. 
+ 3. All the Tasks will finally be used as arguments for a Pipeline. The Pipeline, thanks to its Optimizer, create one or more WorkGro
 
 ### The Pipeline
 
@@ -56,7 +56,7 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjY3NDM1OSw5MDY1ODM1ODMsLTIwOD
-A0NDMyMTYsNzE0MjQ1MTAxLDIwMTUwMTM2OTQsNTU0NzMwNTg3
-LDEwNDkwNjYzMzQsLTU0ODYyMjM3NV19
+eyJoaXN0b3J5IjpbNDU2MTQzNzAwLDkwNjU4MzU4MywtMjA4MD
+Q0MzIxNiw3MTQyNDUxMDEsMjAxNTAxMzY5NCw1NTQ3MzA1ODcs
+MTA0OTA2NjMzNCwtNTQ4NjIyMzc1XX0=
 -->
