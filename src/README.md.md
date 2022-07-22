@@ -24,7 +24,8 @@ To face all of these situations, we need a flexible data-structure where data - 
 Many objects we'll talk about are wrappers. It is important to understand how they interact with each others.
 
 Operation is the corner stone of our model. It is a Functional Interface.
-Opera
+Task wraps a single Operation. It is a class with some usefull properties.
+
 
 ### The Pipeline
 
@@ -48,6 +49,6 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NjIwODYwMywyMDE1MDEzNjk0LDU1ND
-czMDU4NywxMDQ5MDY2MzM0LC01NDg2MjIzNzVdfQ==
+eyJoaXN0b3J5IjpbMTg1MzgyMjM5LDIwMTUwMTM2OTQsNTU0Nz
+MwNTg3LDEwNDkwNjYzMzQsLTU0ODYyMjM3NV19
 -->
