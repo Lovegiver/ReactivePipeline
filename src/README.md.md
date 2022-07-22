@@ -30,16 +30,18 @@ Many objects we'll talk about are wrappers. It is important to understand how th
     
  2. Task wraps a single Operation. It is a class with some usefull
     properties and methods. It triggers Operation execution
-        and inject the produced Flux into the next Operation to maintain the reactiveness. WorkGroup is a wrapper for a set of Tasks, but you
-    won't use it directly. You will use it only if you decide to create
-    your own Optimizer. If you rely on the default Optimizer, the
-    Pipeline will create WorkGroups for you. All you have to understand
-    about a WorkGroup is that it groups all Tasks involved into the
-    realization of a common final Operation.
-
- 1. Finally, the Pipeline is a wrapper for a set of Tasks (and also for
-    one or more WorkGroups as it will dispatch all the tasks in
-    different workgroups).
+        and inject the produced Flux into the next Operation to maintain the reactiveness. 
+        
+ 3. WorkGroup is a wrapper for a set of Tasks, but you
+        won't use it directly. You will use it only if you decide to create
+        your own Optimizer. If you rely on the default Optimizer, the
+        Pipeline will create WorkGroups for you. All you have to understand
+        about a WorkGroup is that it groups all Tasks involved into the
+        realization of a common final Operation.
+        
+ 4. Finally, the Pipeline is a wrapper for a set of Tasks (and also for
+            one or more WorkGroups as it will dispatch all the tasks in
+            different workgroups).
 
 The global philosophy is :
 
@@ -69,7 +71,7 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDU2MDIwMiwtOTk3NTA1NSw5MDY1OD
+eyJoaXN0b3J5IjpbLTI3Mzc1NzA0NiwtOTk3NTA1NSw5MDY1OD
 M1ODMsLTIwODA0NDMyMTYsNzE0MjQ1MTAxLDIwMTUwMTM2OTQs
 NTU0NzMwNTg3LDEwNDkwNjYzMzQsLTU0ODYyMjM3NV19
 -->
