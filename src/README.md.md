@@ -32,7 +32,7 @@ The global philosophy is :
 
  1. We create all necessary Operations. Try to think this object as a pure function, doing just one thing.
  2. Each Operation is wrapped in a Task object. To be instantiated, a Task must have a single Operation and a Set of all the previous Tasks whom produced Fluxes are arguments for this Task.
- 3. Al
+ 3. All the Tasks will finally be used as arguments for a Pipeline. 
 
 ### The Pipeline
 
@@ -56,7 +56,7 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NzA3ODQ1OSwtMjA4MDQ0MzIxNiw3MT
-QyNDUxMDEsMjAxNTAxMzY5NCw1NTQ3MzA1ODcsMTA0OTA2NjMz
-NCwtNTQ4NjIyMzc1XX0=
+eyJoaXN0b3J5IjpbOTA2NTgzNTgzLC0yMDgwNDQzMjE2LDcxND
+I0NTEwMSwyMDE1MDEzNjk0LDU1NDczMDU4NywxMDQ5MDY2MzM0
+LC01NDg2MjIzNzVdfQ==
 -->
