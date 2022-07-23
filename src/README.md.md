@@ -143,11 +143,18 @@ The Monitor is a class holding the inner state of any Monitorable object. Like w
 
 The Monitorable class is the abstract part from which the 3 above objects are derived. Its properties are :
 
- - Monitor monit
+ 
+
+    - String name;
+     - Monitor monitor;
+     - Notifier notifier;
+     - Map<Task, Optional<Flux<?>>> inputFluxesMap = Collections.synchronizedMap(new LinkedHashMap<>());
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNDg0ODI0MiwtNzA0OTYwODAwLC0zNj
+eyJoaXN0b3J5IjpbMTQ3ODQ4MzI3OSwtNzA0OTYwODAwLC0zNj
 IzMDUxNzQsMTU2Njk2MTc1OCwtMjQ4ODgwNCwxODk3MTg2MjUz
 LDQ0NDY2MzU2NCwtMTQyNzkxNzg4NCwxODAwMTkzODIxLDE1MD
 M2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcwNDYsLTk5NzUwNTUs
