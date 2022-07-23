@@ -57,7 +57,9 @@ With the second method, you'll have to define your own `Optimizer`. This means t
 The existing default Optimizer logic is very basic and may be hugely improved and optimized (it is part of my To-Do list).
 
  1. First it looks for all ending (final, terminal) Tasks
- 2. Then, it will 
+ 2. Then, it will group in a same WorkGroup all the Task involved into the realization of the same final Task
+
+
 
     static Task createTask(String taskName, Operation operation, List<Task> predecessors)
 
@@ -71,9 +73,9 @@ The existing default Optimizer logic is very basic and may be hugely improved an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg5MDYyODE4LDQ0NDY2MzU2NCwtMTQyNz
-kxNzg4NCwxODAwMTkzODIxLDE1MDM2MzczMzQsMjczMTg3ODA5
-LC0yNzM3NTcwNDYsLTk5NzUwNTUsOTA2NTgzNTgzLC0yMDgwND
-QzMjE2LDcxNDI0NTEwMSwyMDE1MDEzNjk0LDU1NDczMDU4Nywx
-MDQ5MDY2MzM0LC01NDg2MjIzNzVdfQ==
+eyJoaXN0b3J5IjpbLTEyNzQ4ODcwNyw0NDQ2NjM1NjQsLTE0Mj
+c5MTc4ODQsMTgwMDE5MzgyMSwxNTAzNjM3MzM0LDI3MzE4Nzgw
+OSwtMjczNzU3MDQ2LC05OTc1MDU1LDkwNjU4MzU4MywtMjA4MD
+Q0MzIxNiw3MTQyNDUxMDEsMjAxNTAxMzY5NCw1NTQ3MzA1ODcs
+MTA0OTA2NjMzNCwtNTQ4NjIyMzc1XX0=
 -->
