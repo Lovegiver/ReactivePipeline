@@ -37,15 +37,17 @@ Many objects we'll talk about are wrappers. It is important to understand how th
         
  4. Finally, the `Pipeline` is a wrapper for a set of `Task`s (and also for one or more `WorkGroup`s as it will dispatch all the tasks in different workgroups).
 
-The global philosophy is :
+**The global philosophy is :**
 
  1. We create all necessary `Operation`s. Try to think this object as a pure function, doing just one thing.
- 2. Each `Operation` is wrapped in a `Task` object. To be instantiated, a `Task` must have a single `Operation` and a Set of all the *previous* `Task`s whom produced `Flux`es are arguments for this `Task`.
+ 2. Each `Operation` is wrapped into a `Task` object. To be instantiated, a `Task` must have a single `Operation` and a Set of all the *previous* `Task`s whom produced `Flux`es are arguments for this `Task`.
  3. All the `Task`s will finally be used as arguments for a `Pipeline`. The `Pipeline`, thanks to its `Optimizer`, create one or more `WorkGroup`s. Once this is made, all `WorkGroup`s will be executed in *parallel threads* and in an *asynchronous* manner.
+
+## Objects from the ReactiveContext
 
 ### The Pipeline
 
-The Pipeline class is a wrapper for 
+The Pipeline class is a wrapper for a set of Tasks. You can obtain a Pipeline using
 
     static Pipeline createPipeline(String pipelineName, Set<Task> allTasks)
 
@@ -65,9 +67,9 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTE5MzA2OTcsMTgwMDE5MzgyMSwxNT
-AzNjM3MzM0LDI3MzE4NzgwOSwtMjczNzU3MDQ2LC05OTc1MDU1
-LDkwNjU4MzU4MywtMjA4MDQ0MzIxNiw3MTQyNDUxMDEsMjAxNT
-AxMzY5NCw1NTQ3MzA1ODcsMTA0OTA2NjMzNCwtNTQ4NjIyMzc1
-XX0=
+eyJoaXN0b3J5IjpbMTI2MzA0OTk2MiwxODAwMTkzODIxLDE1MD
+M2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcwNDYsLTk5NzUwNTUs
+OTA2NTgzNTgzLC0yMDgwNDQzMjE2LDcxNDI0NTEwMSwyMDE1MD
+EzNjk0LDU1NDczMDU4NywxMDQ5MDY2MzM0LC01NDg2MjIzNzVd
+fQ==
 -->
