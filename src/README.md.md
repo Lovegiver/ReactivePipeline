@@ -78,8 +78,8 @@ When defining a Task T, what you concretely do is :
 
 ### The DataStreamer
 
-The `DataStreamer` is a ***hot stream***, what means it potentially produces a **never ending** `Flux`.
-For the sake of demonstration, we used it as an exportable monitoring tool. This means that you can define a controller and a GET method returning a `Flux<ServerSentEvent>` that will be consumed by a web app.
+The `DataStreamer` is a ***hot stream*** : it potentially produces a **never ending** `Flux`.
+For the sake of demonstration, we used it as an exportable monitoring tool. This means that you can define a *REST controller* and a GET method returning a `Flux<ServerSentEvent>` that will be consumed by a web app.
 
     static Flux<ServerSentEvent<String>> getAllPipelinesStatesFlux()
 
@@ -91,9 +91,9 @@ For the sake of demonstration, we used it as an exportable monitoring tool. This
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMyMDIzNjMzLDQ0NDY2MzU2NCwtMTQyNz
-kxNzg4NCwxODAwMTkzODIxLDE1MDM2MzczMzQsMjczMTg3ODA5
-LC0yNzM3NTcwNDYsLTk5NzUwNTUsOTA2NTgzNTgzLC0yMDgwND
-QzMjE2LDcxNDI0NTEwMSwyMDE1MDEzNjk0LDU1NDczMDU4Nywx
-MDQ5MDY2MzM0LC01NDg2MjIzNzVdfQ==
+eyJoaXN0b3J5IjpbLTE2NTA0MDYyOTEsNDQ0NjYzNTY0LC0xND
+I3OTE3ODg0LDE4MDAxOTM4MjEsMTUwMzYzNzMzNCwyNzMxODc4
+MDksLTI3Mzc1NzA0NiwtOTk3NTA1NSw5MDY1ODM1ODMsLTIwOD
+A0NDMyMTYsNzE0MjQ1MTAxLDIwMTUwMTM2OTQsNTU0NzMwNTg3
+LDEwNDkwNjYzMzQsLTU0ODYyMjM3NV19
 -->
