@@ -141,7 +141,7 @@ The `Monitor` is a class holding the inner state of any `Monitorable` object. Li
  - `WorkGroup`
  - `Task`
 
-The `Monitorable` class is the abstract part from which the 3 above objects are derived. Its properties are :
+The `Monitorable` class is the *mother class* from which the 3 above objects are derived. Its properties are :
 
     String name;
     Monitor monitor;
@@ -152,11 +152,11 @@ The `Monitorable` class is the abstract part from which the 3 above objects are 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAzMDEwODEsLTcwNDk2MDgwMCwtMzYyMz
-A1MTc0LDE1NjY5NjE3NTgsLTI0ODg4MDQsMTg5NzE4NjI1Myw0
-NDQ2NjM1NjQsLTE0Mjc5MTc4ODQsMTgwMDE5MzgyMSwxNTAzNj
-M3MzM0LDI3MzE4NzgwOSwtMjczNzU3MDQ2LC05OTc1MDU1LDkw
-NjU4MzU4MywtMjA4MDQ0MzIxNiw3MTQyNDUxMDEsMjAxNTAxMz
-Y5NCw1NTQ3MzA1ODcsMTA0OTA2NjMzNCwtNTQ4NjIyMzc1XX0=
-
+eyJoaXN0b3J5IjpbLTIwNTkyNDI5MDUsLTcwNDk2MDgwMCwtMz
+YyMzA1MTc0LDE1NjY5NjE3NTgsLTI0ODg4MDQsMTg5NzE4NjI1
+Myw0NDQ2NjM1NjQsLTE0Mjc5MTc4ODQsMTgwMDE5MzgyMSwxNT
+AzNjM3MzM0LDI3MzE4NzgwOSwtMjczNzU3MDQ2LC05OTc1MDU1
+LDkwNjU4MzU4MywtMjA4MDQ0MzIxNiw3MTQyNDUxMDEsMjAxNT
+AxMzY5NCw1NTQ3MzA1ODcsMTA0OTA2NjMzNCwtNTQ4NjIyMzc1
+XX0=
 -->
