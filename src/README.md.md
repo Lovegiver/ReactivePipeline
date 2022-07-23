@@ -148,11 +148,11 @@ The `Monitorable` class is the *mother class* from which the 3 above objects are
     Notifier notifier;
     Map<Task, Optional<Flux<?>>> inputFluxesMap = Collections.synchronizedMap(new LinkedHashMap<>());
 
-
+This last property is a central part of our system. We actually use it exclusively for Tasks management, but it also could be used for WorkGroups.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTkyNDI5MDUsLTcwNDk2MDgwMCwtMz
+eyJoaXN0b3J5IjpbLTEzMjM5NzI3NTUsLTcwNDk2MDgwMCwtMz
 YyMzA1MTc0LDE1NjY5NjE3NTgsLTI0ODg4MDQsMTg5NzE4NjI1
 Myw0NDQ2NjM1NjQsLTE0Mjc5MTc4ODQsMTgwMDE5MzgyMSwxNT
 AzNjM3MzM0LDI3MzE4NzgwOSwtMjczNzU3MDQ2LC05OTc1MDU1
