@@ -10,7 +10,10 @@ So the second part of this README will present you all the objects needed to mak
 
 ## How things may happen, how it will work
 
-To start, just think about the fact that among all the 
+To start, just think about the fact that among all the operations of a particular process, we can distinguish :
+
+ 1. Starting operations :
+
 Most of the time, we use to design and build apps containing methods which are triggered sequentially in a very procedural way. This can be represented by a straight line of processing operations : A --> B --> C --> ...
 
 But we can also imagine operations as a tree in which methods A and B are independent, so parallelized, and both producing a result which C deserves. In such a case, the C function will take result_A and result_B as arguments and we'll have to synchronize both operations in order to pass their respective results to C : C(result_A, result_B)
@@ -60,8 +63,8 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2OTI5ODg4NSwyNzMxODc4MDksLTI3Mz
-c1NzA0NiwtOTk3NTA1NSw5MDY1ODM1ODMsLTIwODA0NDMyMTYs
-NzE0MjQ1MTAxLDIwMTUwMTM2OTQsNTU0NzMwNTg3LDEwNDkwNj
-YzMzQsLTU0ODYyMjM3NV19
+eyJoaXN0b3J5IjpbLTE4MjI3MTQwMzEsMjczMTg3ODA5LC0yNz
+M3NTcwNDYsLTk5NzUwNTUsOTA2NTgzNTgzLC0yMDgwNDQzMjE2
+LDcxNDI0NTEwMSwyMDE1MDEzNjk0LDU1NDczMDU4NywxMDQ5MD
+Y2MzM0LC01NDg2MjIzNzVdfQ==
 -->
