@@ -63,6 +63,10 @@ The existing default `Optimizer`'s logic is very basic and may be hugely improve
  1. First it looks for all ending (final, terminal) Tasks
  2. Then, it groups into a same WorkGroup all the Task involved into the realization of the same final Task
 
+### The Task
+
+The Task is the Operation's wrapper. The Operation defin
+
 
 
     static Task createTask(String taskName, Operation operation, List<Task> predecessors)
@@ -77,7 +81,7 @@ The existing default `Optimizer`'s logic is very basic and may be hugely improve
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0OTE0OTM2Miw0NDQ2NjM1NjQsLTE0Mj
+eyJoaXN0b3J5IjpbLTQ4NjE0MjM0Niw0NDQ2NjM1NjQsLTE0Mj
 c5MTc4ODQsMTgwMDE5MzgyMSwxNTAzNjM3MzM0LDI3MzE4Nzgw
 OSwtMjczNzU3MDQ2LC05OTc1MDU1LDkwNjU4MzU4MywtMjA4MD
 Q0MzIxNiw3MTQyNDUxMDEsMjAxNTAxMzY5NCw1NTQ3MzA1ODcs
