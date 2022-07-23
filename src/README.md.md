@@ -58,7 +58,7 @@ With the second method, you'll have to define your own `Optimizer`. This means t
 The existing default `Optimizer`'s logic is very basic and may be hugely improved and optimized (it is part of my To-Do list).
 
  1. First it looks for all ending (final, terminal) Tasks
- 2. Then, it groups int a same WorkGroup all the Task involved into the realization of the same final Task
+ 2. Then, it groups into a same WorkGroup all the Task involved into the realization of the same final Task
 
 
 
@@ -74,9 +74,9 @@ The existing default `Optimizer`'s logic is very basic and may be hugely improve
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3ODQ2MTg5MCw0NDQ2NjM1NjQsLTE0Mj
-c5MTc4ODQsMTgwMDE5MzgyMSwxNTAzNjM3MzM0LDI3MzE4Nzgw
-OSwtMjczNzU3MDQ2LC05OTc1MDU1LDkwNjU4MzU4MywtMjA4MD
-Q0MzIxNiw3MTQyNDUxMDEsMjAxNTAxMzY5NCw1NTQ3MzA1ODcs
-MTA0OTA2NjMzNCwtNTQ4NjIyMzc1XX0=
+eyJoaXN0b3J5IjpbLTIwNDYzOTk1NTEsNDQ0NjYzNTY0LC0xND
+I3OTE3ODg0LDE4MDAxOTM4MjEsMTUwMzYzNzMzNCwyNzMxODc4
+MDksLTI3Mzc1NzA0NiwtOTk3NTA1NSw5MDY1ODM1ODMsLTIwOD
+A0NDMyMTYsNzE0MjQ1MTAxLDIwMTUwMTM2OTQsNTU0NzMwNTg3
+LDEwNDkwNjYzMzQsLTU0ODYyMjM3NV19
 -->
