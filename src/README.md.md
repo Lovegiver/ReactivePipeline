@@ -124,11 +124,11 @@ Of course, this is possible only if you have created the necessary Tasks objects
 
 There's many things to say here.
 
- - the Operation's single abstract method, process(Flux... inputs), may take 0, 1 or N Flux(es) as argument. This is why the Lambda expression starts this way : inputs -> ... ; In the case of a starting Operation, an Operation without any predecessors, there's no inputs to process but we have to respect the method's signatur
+ - the Operation's single abstract method, process(Flux... inputs), may take 0, 1 or N Flux(es) as argument. This is why the Lambda expression starts this way : inputs -> ... ; In the case of a starting Operation, an Operation without any predecessors, there's no inputs to process but we have to respect the method's signature. In the example above, only the o3 operation has inputs to process and this is done by getting them from the array of Flx
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NjgwMDc4MSwxNTY2OTYxNzU4LC0yND
+eyJoaXN0b3J5IjpbMTg5MzgyODM1OSwxNTY2OTYxNzU4LC0yND
 g4ODA0LDE4OTcxODYyNTMsNDQ0NjYzNTY0LC0xNDI3OTE3ODg0
 LDE4MDAxOTM4MjEsMTUwMzYzNzMzNCwyNzMxODc4MDksLTI3Mz
 c1NzA0NiwtOTk3NTA1NSw5MDY1ODM1ODMsLTIwODA0NDMyMTYs
