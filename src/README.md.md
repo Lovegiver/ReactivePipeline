@@ -149,11 +149,11 @@ The `Monitorable` class is the *mother class* from which the 3 above objects are
     Map<Task, Optional<Flux<?>>> inputFluxesMap = Collections.synchronizedMap(new LinkedHashMap<>());
 
 This last property is a central part of our system. We actually use it exclusively for `Task`s management, but it also could be used for `WorkGroup`s with an adapted `Optimizer`.
-You may have noticed that our Monitorables are designed like a Composite object. Thus, not only Tasks may receive Fluxes as argument from predecessors, but also WorkGroups. 
+You may have noticed that our `Monitorable`s are designed like a *Composite* object. Thus, not only Tasks may receive Fluxes as argument from predecessors, but also WorkGroups. This is still a work-in-progress that will be solved with a non-basic `Optimizer`.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MTAyMzk2MSwtNzA0OTYwODAwLC0zNj
+eyJoaXN0b3J5IjpbLTMxNjczNjk1MiwtNzA0OTYwODAwLC0zNj
 IzMDUxNzQsMTU2Njk2MTc1OCwtMjQ4ODgwNCwxODk3MTg2MjUz
 LDQ0NDY2MzU2NCwtMTQyNzkxNzg4NCwxODAwMTkzODIxLDE1MD
 M2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcwNDYsLTk5NzUwNTUs
