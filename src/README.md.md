@@ -124,13 +124,13 @@ Of course, this is possible only if you have created the necessary Tasks objects
 
 There's many things to say here.
 
- - the `Operation`'s single abstract method, `process(Flux... inputs)`, may take 0, 1 or N `Flux`(es) as argument. This is why the Lambda expression starts this way : `inputs -> ... ;` In the case of a starting `Operation`, an `Operation` without any *predecessors*, there's no inputs to process but we have to respect the method's signature. In the example above, only the **o3** operation has inputs to process and this is done by getting them from the array of Fluxes produced by the varargs argument.
+ - the `Operation`'s single abstract method, `process(Flux... inputs)`, may take 0, 1 or N `Flux`(es) as argument. This is why the Lambda expression starts this way : `inputs -> ... ;` In the case of a starting `Operation`, an `Operation` without any *predecessors*, there's no inputs to process but we have to respect the method's signature. In the example above, only the **o3** operation has inputs to process and this is done by getting them from the array of `Flux`es produced by the varargs argument.
  - the **t1** and **t2** `Task`s wrap starting `Operation`s, that's why there's no previous `Task`s to declare here. But we still have to pass an empty collection as argument.
- - the **t3** `Task` do have predecessors, respectively the **t1** and **t2** `Task`s which are respectively wrapping **o1** and **o2** `Operation`s. In that case, we pass a collection made of the **t1** and **t2** Tasks. This collection is a List, because the order of the argument matters of course.
+ - the **t3** `Task` do have predecessors, respectively the **t1** and **t2** `Task`s which are respectively wrapping **o1** and **o2** `Operation`s. In that case, we pass a collection made of the **t1** and **t2** `Task`s. This collection is a `List`, because the order of the argument matters of course. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNDI4MTIzMiwtMzYyMzA1MTc0LDE1Nj
+eyJoaXN0b3J5IjpbLTcwNDk2MDgwMCwtMzYyMzA1MTc0LDE1Nj
 Y5NjE3NTgsLTI0ODg4MDQsMTg5NzE4NjI1Myw0NDQ2NjM1NjQs
 LTE0Mjc5MTc4ODQsMTgwMDE5MzgyMSwxNTAzNjM3MzM0LDI3Mz
 E4NzgwOSwtMjczNzU3MDQ2LC05OTc1MDU1LDkwNjU4MzU4Mywt
