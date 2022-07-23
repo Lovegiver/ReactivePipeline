@@ -99,15 +99,16 @@ As already said, `Operation` is the corner-stone of this API. This interface is 
 
 We can take some frustrating examples to show how to use it :
 
-
+    Operation o1 = inputs -> Flux.range(1,10);
+    Operation o2 = inputs -> Flux.range(1,10);
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA1MjM3ODIwLC0yNDg4ODA0LDE4OTcxOD
-YyNTMsNDQ0NjYzNTY0LC0xNDI3OTE3ODg0LDE4MDAxOTM4MjEs
-MTUwMzYzNzMzNCwyNzMxODc4MDksLTI3Mzc1NzA0NiwtOTk3NT
-A1NSw5MDY1ODM1ODMsLTIwODA0NDMyMTYsNzE0MjQ1MTAxLDIw
-MTUwMTM2OTQsNTU0NzMwNTg3LDEwNDkwNjYzMzQsLTU0ODYyMj
-M3NV19
+eyJoaXN0b3J5IjpbMTM1NDAwNDE3NywtMjQ4ODgwNCwxODk3MT
+g2MjUzLDQ0NDY2MzU2NCwtMTQyNzkxNzg4NCwxODAwMTkzODIx
+LDE1MDM2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcwNDYsLTk5Nz
+UwNTUsOTA2NTgzNTgzLC0yMDgwNDQzMjE2LDcxNDI0NTEwMSwy
+MDE1MDEzNjk0LDU1NDczMDU4NywxMDQ5MDY2MzM0LC01NDg2Mj
+IzNzVdfQ==
 -->
