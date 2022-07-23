@@ -128,12 +128,17 @@ There's many things to say here.
  - the **t1** and **t2** `Task`s wrap starting `Operation`s, that's why there's no previous `Task`s to declare here. But we still have to pass an empty collection as argument.
  - the **t3** `Task` do have predecessors, respectively the **t1** and **t2** `Task`s which are respectively wrapping **o1** and **o2** `Operation`s. In that case, we pass a collection made of the **t1** and **t2** `Task`s. This collection is a `List`, because the order of the argument matters of course. 
 
+### Notifier / StateNotifier
+
+You theoretically will not have to handle the Notifier
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNDk2MDgwMCwtMzYyMzA1MTc0LDE1Nj
-Y5NjE3NTgsLTI0ODg4MDQsMTg5NzE4NjI1Myw0NDQ2NjM1NjQs
-LTE0Mjc5MTc4ODQsMTgwMDE5MzgyMSwxNTAzNjM3MzM0LDI3Mz
-E4NzgwOSwtMjczNzU3MDQ2LC05OTc1MDU1LDkwNjU4MzU4Mywt
-MjA4MDQ0MzIxNiw3MTQyNDUxMDEsMjAxNTAxMzY5NCw1NTQ3Mz
-A1ODcsMTA0OTA2NjMzNCwtNTQ4NjIyMzc1XX0=
+eyJoaXN0b3J5IjpbLTE1MzMzMjU4OTAsLTcwNDk2MDgwMCwtMz
+YyMzA1MTc0LDE1NjY5NjE3NTgsLTI0ODg4MDQsMTg5NzE4NjI1
+Myw0NDQ2NjM1NjQsLTE0Mjc5MTc4ODQsMTgwMDE5MzgyMSwxNT
+AzNjM3MzM0LDI3MzE4NzgwOSwtMjczNzU3MDQ2LC05OTc1MDU1
+LDkwNjU4MzU4MywtMjA4MDQ0MzIxNiw3MTQyNDUxMDEsMjAxNT
+AxMzY5NCw1NTQ3MzA1ODcsMTA0OTA2NjMzNCwtNTQ4NjIyMzc1
+XX0=
 -->
