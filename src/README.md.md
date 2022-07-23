@@ -54,10 +54,11 @@ You can obtain a `Pipeline` using :
     static Pipeline createPipeline(String pipelineName, Set<Task> allTasks, WorkGroupOptimizer optimizer)
 
 With the second method, you'll have to define your own `Optimizer`. This means that you define you own logic to group Tasks into `WorkGroup`s.
-The existing default Optimizer logic is very basic and may be hugely improved and optimized (it is part of my To-Do list).
+
+The existing default `Optimizer`'s logic is very basic and may be hugely improved and optimized (it is part of my To-Do list).
 
  1. First it looks for all ending (final, terminal) Tasks
- 2. Then, it will group in a same WorkGroup all the Task involved into the realization of the same final Task
+ 2. Then, it groups int a same WorkGroup all the Task involved into the realization of the same final Task
 
 
 
@@ -73,7 +74,7 @@ The existing default Optimizer logic is very basic and may be hugely improved an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzQ4ODcwNyw0NDQ2NjM1NjQsLTE0Mj
+eyJoaXN0b3J5IjpbMjA3ODQ2MTg5MCw0NDQ2NjM1NjQsLTE0Mj
 c5MTc4ODQsMTgwMDE5MzgyMSwxNTAzNjM3MzM0LDI3MzE4Nzgw
 OSwtMjczNzU3MDQ2LC05OTc1MDU1LDkwNjU4MzU4MywtMjA4MD
 Q0MzIxNiw3MTQyNDUxMDEsMjAxNTAxMzY5NCw1NTQ3MzA1ODcs
