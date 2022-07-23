@@ -12,7 +12,9 @@ So the second part of this README will present you all the objects needed to mak
 
 To start, just think about the fact that among all the operations of a particular process, we can distinguish :
 
- 1. Starting operations :
+ 1. Starting operations which do not take any arguments, thus have no predecessors
+ 2. Ending operations which take arguments and have no successors
+ 3. Interme
 
 Most of the time, we use to design and build apps containing methods which are triggered sequentially in a very procedural way. This can be represented by a straight line of processing operations : A --> B --> C --> ...
 
@@ -63,7 +65,7 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjI3MTQwMzEsMjczMTg3ODA5LC0yNz
+eyJoaXN0b3J5IjpbLTE1NzI1ODM1MjUsMjczMTg3ODA5LC0yNz
 M3NTcwNDYsLTk5NzUwNTUsOTA2NTgzNTgzLC0yMDgwNDQzMjE2
 LDcxNDI0NTEwMSwyMDE1MDEzNjk0LDU1NDczMDU4NywxMDQ5MD
 Y2MzM0LC01NDg2MjIzNzVdfQ==
