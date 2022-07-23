@@ -118,15 +118,15 @@ Operation o3 will use each single value from preceding `Flux`es by creating tupl
 
 O course, this is possible only if you have created the necessary Tasks objects around your Operations :
 
-Task t1 = Reactive
+Task t1 = ReactiveContext.createTask("Integer Flux 1", 
  
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NDQ4MzA4MCwtMjQ4ODgwNCwxODk3MT
-g2MjUzLDQ0NDY2MzU2NCwtMTQyNzkxNzg4NCwxODAwMTkzODIx
-LDE1MDM2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcwNDYsLTk5Nz
-UwNTUsOTA2NTgzNTgzLC0yMDgwNDQzMjE2LDcxNDI0NTEwMSwy
-MDE1MDEzNjk0LDU1NDczMDU4NywxMDQ5MDY2MzM0LC01NDg2Mj
-IzNzVdfQ==
+eyJoaXN0b3J5IjpbLTE4NDcwODcxMjgsLTI0ODg4MDQsMTg5Nz
+E4NjI1Myw0NDQ2NjM1NjQsLTE0Mjc5MTc4ODQsMTgwMDE5Mzgy
+MSwxNTAzNjM3MzM0LDI3MzE4NzgwOSwtMjczNzU3MDQ2LC05OT
+c1MDU1LDkwNjU4MzU4MywtMjA4MDQ0MzIxNiw3MTQyNDUxMDEs
+MjAxNTAxMzY5NCw1NTQ3MzA1ODcsMTA0OTA2NjMzNCwtNTQ4Nj
+IyMzc1XX0=
 -->
