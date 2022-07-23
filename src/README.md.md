@@ -124,14 +124,14 @@ Of course, this is possible only if you have created the necessary Tasks objects
 
 There's many things to say here.
 
- - the Operation's single abstract method, process(Flux... inputs), may take 0, 1 or N Flux(es) as argument. This is why the Lambda expression starts this way : inputs -> ... ;
+ - the Operation's single abstract method, process(Flux... inputs), may take 0, 1 or N Flux(es) as argument. This is why the Lambda expression starts this way : inputs -> ... ; In the case of a starting Operation, an Operation without any predecessors, there's no inputs to process but we have to respect the method's signatur
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk0NTU1NjA5LDE1NjY5NjE3NTgsLTI0OD
-g4MDQsMTg5NzE4NjI1Myw0NDQ2NjM1NjQsLTE0Mjc5MTc4ODQs
-MTgwMDE5MzgyMSwxNTAzNjM3MzM0LDI3MzE4NzgwOSwtMjczNz
-U3MDQ2LC05OTc1MDU1LDkwNjU4MzU4MywtMjA4MDQ0MzIxNiw3
-MTQyNDUxMDEsMjAxNTAxMzY5NCw1NTQ3MzA1ODcsMTA0OTA2Nj
-MzNCwtNTQ4NjIyMzc1XX0=
+eyJoaXN0b3J5IjpbMjA2NjgwMDc4MSwxNTY2OTYxNzU4LC0yND
+g4ODA0LDE4OTcxODYyNTMsNDQ0NjYzNTY0LC0xNDI3OTE3ODg0
+LDE4MDAxOTM4MjEsMTUwMzYzNzMzNCwyNzMxODc4MDksLTI3Mz
+c1NzA0NiwtOTk3NTA1NSw5MDY1ODM1ODMsLTIwODA0NDMyMTYs
+NzE0MjQ1MTAxLDIwMTUwMTM2OTQsNTU0NzMwNTg3LDEwNDkwNj
+YzMzQsLTU0ODYyMjM3NV19
 -->
