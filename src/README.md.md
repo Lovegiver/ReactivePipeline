@@ -12,8 +12,8 @@ So the second part of this README will present you all the objects needed to mak
 
 To start, just think about the fact that among all the operations of a particular process, we can distinguish :
 
- 1. Starting operations which do not take any arguments, thus have no predecessors
- 2. Ending operations which take arguments and have no successors
+ 1. **Starting operations** which do not take any arguments, thus have no *predecessors*
+ 2. **Ending operations** which take arguments and have no *successors*
  3. Intermediate operations are the others : they need arguments from their predecessors and produce outputs that will be their successors' inputs
 
 Most of the time, we use to design and build apps containing methods which are triggered sequentially in a very procedural way. This can be represented by a straight line of processing operations : A --> B --> C --> ...
@@ -41,7 +41,7 @@ The global philosophy is :
 
  1. We create all necessary `Operation`s. Try to think this object as a pure function, doing just one thing.
  2. Each `Operation` is wrapped in a `Task` object. To be instantiated, a `Task` must have a single `Operation` and a Set of all the *previous* `Task`s whom produced `Flux`es are arguments for this `Task`.
- 3. All the `Task`s will finally be used as arguments for a Pipeline. The Pipeline, thanks to its Optimizer, create one or more WorkGroups. Once this is made, all WorkGroups will be executed in parallel threads and in an asynchronous manner.
+ 3. All the `Task`s will finally be used as arguments for a `Pipeline`. The `Pipeline`, thanks to its `Optimizer`, create one or more `WorkGroup`s. Once this is made, all `WorkGroup`s will be executed in *parallel threads* and in an *asynchronous* manner.
 
 ### The Pipeline
 
@@ -65,7 +65,7 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4Mjc5ODkxNSwxODAwMTkzODIxLDE1MD
+eyJoaXN0b3J5IjpbLTI5MTI2MTYyMywxODAwMTkzODIxLDE1MD
 M2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcwNDYsLTk5NzUwNTUs
 OTA2NTgzNTgzLC0yMDgwNDQzMjE2LDcxNDI0NTEwMSwyMDE1MD
 EzNjk0LDU1NDczMDU4NywxMDQ5MDY2MzM0LC01NDg2MjIzNzVd
