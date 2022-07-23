@@ -47,7 +47,7 @@ Many objects we'll talk about are wrappers. It is important to understand how th
 
 ### The Pipeline
 
-The Pipeline class is a wrapper for a set of Tasks. When calling its .execute() method, then all Operations will be executed 
+The Pipeline class is a wrapper for a set of Tasks. When calling its `.execute()` method, then all Operations will be executed from the very first starting ones to the ending ones.
 
 You can obtain a Pipeline using :
 
@@ -70,9 +70,9 @@ With the second method, you'll have to define your own Optimizer. This means tha
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNTE3MzE4MiwxODAwMTkzODIxLDE1MD
-M2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcwNDYsLTk5NzUwNTUs
-OTA2NTgzNTgzLC0yMDgwNDQzMjE2LDcxNDI0NTEwMSwyMDE1MD
-EzNjk0LDU1NDczMDU4NywxMDQ5MDY2MzM0LC01NDg2MjIzNzVd
-fQ==
+eyJoaXN0b3J5IjpbLTE0Mjc5MTc4ODQsMTgwMDE5MzgyMSwxNT
+AzNjM3MzM0LDI3MzE4NzgwOSwtMjczNzU3MDQ2LC05OTc1MDU1
+LDkwNjU4MzU4MywtMjA4MDQ0MzIxNiw3MTQyNDUxMDEsMjAxNT
+AxMzY5NCw1NTQ3MzA1ODcsMTA0OTA2NjMzNCwtNTQ4NjIyMzc1
+XX0=
 -->
