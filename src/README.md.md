@@ -100,12 +100,18 @@ As already said, `Operation` is the corner-stone of this API. This interface is 
 We can take some frustrating examples to show how to use it :
 
     Operation o1 = inputs -> Flux.range(1,10);
-    Operation o2 = inputs -> Flux.range(1,10);
+    Operation o2 = inputs -> Flux.range(91,100);
+    Operation o3 = inputs -> {  
+      Flux<?> int1 = inputs[0];  
+      Flux<?> int2 = inputs[1];  
+      return Flux.zip(int1, int2, (x, y) -> (int) x + (int) y);  
+    };
 
+Operation o1 will produce a Flux<Intege
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NDAwNDE3NywtMjQ4ODgwNCwxODk3MT
+eyJoaXN0b3J5IjpbMTM3NjExMzY1OCwtMjQ4ODgwNCwxODk3MT
 g2MjUzLDQ0NDY2MzU2NCwtMTQyNzkxNzg4NCwxODAwMTkzODIx
 LDE1MDM2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcwNDYsLTk5Nz
 UwNTUsOTA2NTgzNTgzLC0yMDgwNDQzMjE2LDcxNDI0NTEwMSwy
