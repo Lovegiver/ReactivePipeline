@@ -109,18 +109,21 @@ We can take some frustrating examples to show how to use it :
 
 Operation o1 will produce a `Flux<Integer>` : 1, 2, 3... 10
 Operation o2 will produce a `Flux<Integer>` : 91, 92, 93... 100
-Operation o3 will use each single value from preceding `Flux`es by creating tuples that will be processed for the producing of a new result (it is the way to use the . : 
+Operation o3 will use each single value from preceding `Flux`es by creating tuples that will be processed for the producing of a new result (it is the way to use the `.zip` operator) : 
 
  - (1, 91) will produce 92
  - (2, 92) will produce 94
  - (3, 93) will produce 96
  - etc.
 
+O course, this is possible only if you have created the necessary Tasks objects around your Operations :
+
+Task t1 = Reactive
  
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxMjUxNzAwOSwtMjQ4ODgwNCwxODk3MT
+eyJoaXN0b3J5IjpbMjA5NDQ4MzA4MCwtMjQ4ODgwNCwxODk3MT
 g2MjUzLDQ0NDY2MzU2NCwtMTQyNzkxNzg4NCwxODAwMTkzODIx
 LDE1MDM2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcwNDYsLTk5Nz
 UwNTUsOTA2NTgzNTgzLC0yMDgwNDQzMjE2LDcxNDI0NTEwMSwy
