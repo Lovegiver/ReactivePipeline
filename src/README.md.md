@@ -89,11 +89,11 @@ In the case you define multiple Pipelines, the DataStreamer can produces a Flux 
 
 ## Other useful objects
 
-Other useful objects are not directly accessible through the ReactiveContext class.
+Other useful objects are not directly accessible through the `ReactiveContext` class.
 
 ### Operation
 
-As already said, Operation is the corner-stone of this API. This interface is used to define you domain's logic. As it is a Functional Interface, you can use it as a Lambda expression.
+As already said, `Operation` is the corner-stone of this API. This interface is used to define you domain's logic. As it is a `Functional Interface`, you can use it as a Lambda expression.
 
     Flux<?> process(Flux<?>... inputs) throws TaskExecutionException;
 
@@ -101,9 +101,10 @@ As already said, Operation is the corner-stone of this API. This interface is us
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0ODg4MDQsMTg5NzE4NjI1Myw0NDQ2Nj
-M1NjQsLTE0Mjc5MTc4ODQsMTgwMDE5MzgyMSwxNTAzNjM3MzM0
-LDI3MzE4NzgwOSwtMjczNzU3MDQ2LC05OTc1MDU1LDkwNjU4Mz
-U4MywtMjA4MDQ0MzIxNiw3MTQyNDUxMDEsMjAxNTAxMzY5NCw1
-NTQ3MzA1ODcsMTA0OTA2NjMzNCwtNTQ4NjIyMzc1XX0=
+eyJoaXN0b3J5IjpbLTcxOTIyMTYyMiwtMjQ4ODgwNCwxODk3MT
+g2MjUzLDQ0NDY2MzU2NCwtMTQyNzkxNzg4NCwxODAwMTkzODIx
+LDE1MDM2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcwNDYsLTk5Nz
+UwNTUsOTA2NTgzNTgzLC0yMDgwNDQzMjE2LDcxNDI0NTEwMSwy
+MDE1MDEzNjk0LDU1NDczMDU4NywxMDQ5MDY2MzM0LC01NDg2Mj
+IzNzVdfQ==
 -->
