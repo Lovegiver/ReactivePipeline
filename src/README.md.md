@@ -130,16 +130,16 @@ There's many things to say here.
 
 ### Notifier / StateNotifier
 
-You theoretically will not have to handle the Notifier (interface) and the StateNotifier (implementation) in charge of notifying the DataStreamer of any change in any Monitorable's inner state.
-We here use a Visitor's pattern to delegate the action of 
+You theoretically will not have to handle the `Notifier` (interface) and the `StateNotifier` (implementation) in charge of notifying the `DataStreamer` of any change in any `Monitorable`'s inner state.
+We here use a *Visitor*'s pattern to delegate the action of notifying to an independent object knowing the DataStreamer and the Pipeline it is reporting about.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM2OTU2NTIwLC03MDQ5NjA4MDAsLTM2Mj
-MwNTE3NCwxNTY2OTYxNzU4LC0yNDg4ODA0LDE4OTcxODYyNTMs
-NDQ0NjYzNTY0LC0xNDI3OTE3ODg0LDE4MDAxOTM4MjEsMTUwMz
-YzNzMzNCwyNzMxODc4MDksLTI3Mzc1NzA0NiwtOTk3NTA1NSw5
-MDY1ODM1ODMsLTIwODA0NDMyMTYsNzE0MjQ1MTAxLDIwMTUwMT
-M2OTQsNTU0NzMwNTg3LDEwNDkwNjYzMzQsLTU0ODYyMjM3NV19
-
+eyJoaXN0b3J5IjpbMTk3NzIyMTAzNywtNzA0OTYwODAwLC0zNj
+IzMDUxNzQsMTU2Njk2MTc1OCwtMjQ4ODgwNCwxODk3MTg2MjUz
+LDQ0NDY2MzU2NCwtMTQyNzkxNzg4NCwxODAwMTkzODIxLDE1MD
+M2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcwNDYsLTk5NzUwNTUs
+OTA2NTgzNTgzLC0yMDgwNDQzMjE2LDcxNDI0NTEwMSwyMDE1MD
+EzNjk0LDU1NDczMDU4NywxMDQ5MDY2MzM0LC01NDg2MjIzNzVd
+fQ==
 -->
