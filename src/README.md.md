@@ -53,7 +53,7 @@ You can obtain a `Pipeline` using :
 
     static Pipeline createPipeline(String pipelineName, Set<Task> allTasks, WorkGroupOptimizer optimizer)
 
-With the second method, you'll have to define your own `Optimizer`. This means that you define you own logic to group Tasks into `WorkGroup`s. In order to define your own `Optimizer`, you'll have to implement the following Functional Interface :
+With the second method, you'll have to define your own `Optimizer`. This means that you define you own logic to group Tasks into `WorkGroup`s. In order to define your own `Optimizer`, you'll have to implement the following `Functional Interface` :
 
     Collection<WorkGroup> optimize(Set<Task> allTasks)
 
@@ -71,6 +71,8 @@ This is why the Task takes a `List<Task>` as argument.
 
     static Task createTask(String taskName, Operation operation, List<Task> predecessors)
 
+When defining a Task, what you concret
+
 
     static Flux<ServerSentEvent<String>> getAllPipelinesStatesFlux()
 
@@ -81,9 +83,9 @@ This is why the Task takes a `List<Task>` as argument.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzMDg5NDk3OCw0NDQ2NjM1NjQsLTE0Mj
-c5MTc4ODQsMTgwMDE5MzgyMSwxNTAzNjM3MzM0LDI3MzE4Nzgw
-OSwtMjczNzU3MDQ2LC05OTc1MDU1LDkwNjU4MzU4MywtMjA4MD
-Q0MzIxNiw3MTQyNDUxMDEsMjAxNTAxMzY5NCw1NTQ3MzA1ODcs
-MTA0OTA2NjMzNCwtNTQ4NjIyMzc1XX0=
+eyJoaXN0b3J5IjpbMjA0OTg4ODU5LDQ0NDY2MzU2NCwtMTQyNz
+kxNzg4NCwxODAwMTkzODIxLDE1MDM2MzczMzQsMjczMTg3ODA5
+LC0yNzM3NTcwNDYsLTk5NzUwNTUsOTA2NTgzNTgzLC0yMDgwND
+QzMjE2LDcxNDI0NTEwMSwyMDE1MDEzNjk0LDU1NDczMDU4Nywx
+MDQ5MDY2MzM0LC01NDg2MjIzNzVdfQ==
 -->
