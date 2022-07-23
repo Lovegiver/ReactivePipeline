@@ -71,8 +71,10 @@ This is why the Task takes a `List<Task>` as argument.
 
     static Task createTask(String taskName, Operation operation, List<Task> predecessors)
 
-When defining a Task, what you concret
+When defining a Task, what you concretely do is :
 
+ 1. Referencing the Operation to execute
+ 2. Referencing the Task(s) whom resulting Flux(es) will be used as argum
 
     static Flux<ServerSentEvent<String>> getAllPipelinesStatesFlux()
 
@@ -83,9 +85,9 @@ When defining a Task, what you concret
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0OTg4ODU5LDQ0NDY2MzU2NCwtMTQyNz
-kxNzg4NCwxODAwMTkzODIxLDE1MDM2MzczMzQsMjczMTg3ODA5
-LC0yNzM3NTcwNDYsLTk5NzUwNTUsOTA2NTgzNTgzLC0yMDgwND
-QzMjE2LDcxNDI0NTEwMSwyMDE1MDEzNjk0LDU1NDczMDU4Nywx
-MDQ5MDY2MzM0LC01NDg2MjIzNzVdfQ==
+eyJoaXN0b3J5IjpbMjA1MDA3NDMzNSw0NDQ2NjM1NjQsLTE0Mj
+c5MTc4ODQsMTgwMDE5MzgyMSwxNTAzNjM3MzM0LDI3MzE4Nzgw
+OSwtMjczNzU3MDQ2LC05OTc1MDU1LDkwNjU4MzU4MywtMjA4MD
+Q0MzIxNiw3MTQyNDUxMDEsMjAxNTAxMzY5NCw1NTQ3MzA1ODcs
+MTA0OTA2NjMzNCwtNTQ4NjIyMzc1XX0=
 -->
