@@ -85,13 +85,13 @@ For the sake of demonstration, we used it as an exportable monitoring tool. This
 
     static Flux<ServerSentEvent<String>> getSinglePipelineStatesFlux(Pipeline pipeline)
 
-
+In the case you define multiple Pipelines, the DataStreamer can produces a Flux for all of them or a single one. For a single Pipeline, you'll use the seco
 
 ## Other usefull objects
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTA0MDYyOTEsNDQ0NjYzNTY0LC0xND
+eyJoaXN0b3J5IjpbLTE4NDMyMjY0NDgsNDQ0NjYzNTY0LC0xND
 I3OTE3ODg0LDE4MDAxOTM4MjEsMTUwMzYzNzMzNCwyNzMxODc4
 MDksLTI3Mzc1NzA0NiwtOTk3NTA1NSw5MDY1ODM1ODMsLTIwOD
 A0NDMyMTYsNzE0MjQ1MTAxLDIwMTUwMTM2OTQsNTU0NzMwNTg3
