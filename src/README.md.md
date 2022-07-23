@@ -25,11 +25,11 @@ To face all of these situations, we need a flexible data-structure where data - 
 
 
 
-## Objects from ReactiveContext
+## The toolbox
 
 Many objects we'll talk about are wrappers. It is important to understand how they interact with each others.
 
- 1. `Operation` is the corner stone of our model. It is a `Functional Interface`. Each action, each method, each function, has to be an Operation. An Operation takes a *varargs* of Flux as arguments and produces a Flux. 
+ 1. `Operation` is the corner stone of our model. It is a `Functional Interface`. Each action, each method, each function, has to be an Operation. An Operation takes a *varargs* of Flux(es) as arguments and produces a Flux. 
     
  2. Task wraps a single Operation. It is a class with some usefull properties and methods. It triggers Operation execution and inject the produced Flux into the next Operation to maintain the reactive behavior. 
         
@@ -65,8 +65,8 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMzYzNzMzNCwyNzMxODc4MDksLTI3Mz
-c1NzA0NiwtOTk3NTA1NSw5MDY1ODM1ODMsLTIwODA0NDMyMTYs
-NzE0MjQ1MTAxLDIwMTUwMTM2OTQsNTU0NzMwNTg3LDEwNDkwNj
-YzMzQsLTU0ODYyMjM3NV19
+eyJoaXN0b3J5IjpbODEwMjk2NDU1LDE1MDM2MzczMzQsMjczMT
+g3ODA5LC0yNzM3NTcwNDYsLTk5NzUwNTUsOTA2NTgzNTgzLC0y
+MDgwNDQzMjE2LDcxNDI0NTEwMSwyMDE1MDEzNjk0LDU1NDczMD
+U4NywxMDQ5MDY2MzM0LC01NDg2MjIzNzVdfQ==
 -->
