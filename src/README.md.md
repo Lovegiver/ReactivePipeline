@@ -135,11 +135,16 @@ We here use a *Visitor*'s pattern to delegate the action of notifying to an inde
 
 ### Monitorable / Monitor
 
-The Monitor is a class holding the inner state of any Monitorable object. 
+The Monitor is a class holding the inner state of any Monitorable object. Like we have seen before, Monitorable objects are :
+
+ - Pipeline
+ - WorkGroup
+ - Task
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDM2MTM3ODgsLTcwNDk2MDgwMCwtMz
+eyJoaXN0b3J5IjpbLTE2OTE5OTY1MTUsLTcwNDk2MDgwMCwtMz
 YyMzA1MTc0LDE1NjY5NjE3NTgsLTI0ODg4MDQsMTg5NzE4NjI1
 Myw0NDQ2NjM1NjQsLTE0Mjc5MTc4ODQsMTgwMDE5MzgyMSwxNT
 AzNjM3MzM0LDI3MzE4NzgwOSwtMjczNzU3MDQ2LC05OTc1MDU1
