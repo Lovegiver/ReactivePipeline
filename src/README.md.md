@@ -74,7 +74,9 @@ This is why the Task takes a `List<Task>` as argument.
 When defining a Task, what you concretely do is :
 
  1. Referencing the Operation to execute
- 2. Referencing the Task(s) whom resulting Flux(es) will be used as argum
+ 2. Referencing the Task(s) whom resulting Flux(es) will be used as argument for the task's Operation
+
+
 
     static Flux<ServerSentEvent<String>> getAllPipelinesStatesFlux()
 
@@ -85,7 +87,7 @@ When defining a Task, what you concretely do is :
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MDA3NDMzNSw0NDQ2NjM1NjQsLTE0Mj
+eyJoaXN0b3J5IjpbMjA5Nzc5ODk2Niw0NDQ2NjM1NjQsLTE0Mj
 c5MTc4ODQsMTgwMDE5MzgyMSwxNTAzNjM3MzM0LDI3MzE4Nzgw
 OSwtMjczNzU3MDQ2LC05OTc1MDU1LDkwNjU4MzU4MywtMjA4MD
 Q0MzIxNiw3MTQyNDUxMDEsMjAxNTAxMzY5NCw1NTQ3MzA1ODcs
