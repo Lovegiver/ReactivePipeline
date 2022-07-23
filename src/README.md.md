@@ -47,13 +47,15 @@ Many objects we'll talk about are wrappers. It is important to understand how th
 
 ### The Pipeline
 
-The Pipeline class is a wrapper for a set of Tasks. You can obtain a Pipeline using :
+The Pipeline class is a wrapper for a set of Tasks. When calling its .execute() method, then all Operations will be executed 
+
+You can obtain a Pipeline using :
 
     static Pipeline createPipeline(String pipelineName, Set<Task> allTasks)
 
     static Pipeline createPipeline(String pipelineName, Set<Task> allTasks, WorkGroupOptimizer optimizer)
 
-With the second method, you'll have to define your own Optimizer. This means that you define you own logic to group tasks into 
+With the second method, you'll have to define your own Optimizer. This means that you define you own logic to group Tasks into WorkGroups
 
 
     static Task createTask(String taskName, Operation operation, List<Task> predecessors)
@@ -68,9 +70,9 @@ With the second method, you'll have to define your own Optimizer. This means tha
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE0NTE2NTAwLDE4MDAxOTM4MjEsMTUwMz
-YzNzMzNCwyNzMxODc4MDksLTI3Mzc1NzA0NiwtOTk3NTA1NSw5
-MDY1ODM1ODMsLTIwODA0NDMyMTYsNzE0MjQ1MTAxLDIwMTUwMT
-M2OTQsNTU0NzMwNTg3LDEwNDkwNjYzMzQsLTU0ODYyMjM3NV19
-
+eyJoaXN0b3J5IjpbLTMyNTE3MzE4MiwxODAwMTkzODIxLDE1MD
+M2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcwNDYsLTk5NzUwNTUs
+OTA2NTgzNTgzLC0yMDgwNDQzMjE2LDcxNDI0NTEwMSwyMDE1MD
+EzNjk0LDU1NDczMDU4NywxMDQ5MDY2MzM0LC01NDg2MjIzNzVd
+fQ==
 -->
