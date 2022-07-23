@@ -109,11 +109,11 @@ We can take some frustrating examples to show how to use it :
 
 Operation o1 will produce a Flux<Integer> : 1, 2, 3... 10
 Operation o2 will produce a Flux<Integer> : 91, 92, 93... 100
-Operation o3 will use each single 
+Operation o3 will use each single value from preceding Fluxes but creating tuples that will be processed for the producing of a new result : (1, 91) will produce 92, 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODE1ODMwOTQsLTI0ODg4MDQsMTg5Nz
+eyJoaXN0b3J5IjpbLTE5MzkxOTk5ODcsLTI0ODg4MDQsMTg5Nz
 E4NjI1Myw0NDQ2NjM1NjQsLTE0Mjc5MTc4ODQsMTgwMDE5Mzgy
 MSwxNTAzNjM3MzM0LDI3MzE4NzgwOSwtMjczNzU3MDQ2LC05OT
 c1MDU1LDkwNjU4MzU4MywtMjA4MDQ0MzIxNiw3MTQyNDUxMDEs
