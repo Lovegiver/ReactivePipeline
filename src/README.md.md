@@ -120,16 +120,16 @@ Of course, this is possible only if you have created the necessary Tasks objects
 
     Task t1 = ReactiveContext.createTask("Integer Flux 1", o1, Collections.emptyList());
     Task t2 = ReactiveContext.createTask("Integer Flux 2", o2, Collections.emptyList());
-    Task t3 = new Task("Sum t1 t2", o3, List.of(t1, t2));
+    Task t3 = ReactiveContext.createTask("Sum t1 t2", o3, List.of(t1, t2));
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEzNTY3NTYyLC0yNDg4ODA0LDE4OTcxOD
-YyNTMsNDQ0NjYzNTY0LC0xNDI3OTE3ODg0LDE4MDAxOTM4MjEs
-MTUwMzYzNzMzNCwyNzMxODc4MDksLTI3Mzc1NzA0NiwtOTk3NT
-A1NSw5MDY1ODM1ODMsLTIwODA0NDMyMTYsNzE0MjQ1MTAxLDIw
-MTUwMTM2OTQsNTU0NzMwNTg3LDEwNDkwNjYzMzQsLTU0ODYyMj
-M3NV19
+eyJoaXN0b3J5IjpbMTU2Njk2MTc1OCwtMjQ4ODgwNCwxODk3MT
+g2MjUzLDQ0NDY2MzU2NCwtMTQyNzkxNzg4NCwxODAwMTkzODIx
+LDE1MDM2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcwNDYsLTk5Nz
+UwNTUsOTA2NTgzNTgzLC0yMDgwNDQzMjE2LDcxNDI0NTEwMSwy
+MDE1MDEzNjk0LDU1NDczMDU4NywxMDQ5MDY2MzM0LC01NDg2Mj
+IzNzVdfQ==
 -->
