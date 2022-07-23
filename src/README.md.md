@@ -45,15 +45,15 @@ Many objects we'll talk about are wrappers. It is important to understand how th
 
 ### The Pipeline
 
-The Pipeline class is a wrapper for a set of Tasks. When calling its `.execute()` method, then all Operations will be executed from the very first starting ones to the ending ones.
+The Pipeline class is a wrapper for a set of Tasks. When calling its `.execute()` method, then all `Operation`s will be executed from the very first starting ones to the ending ones.
 
-You can obtain a Pipeline using :
+You can obtain a `Pipeline` using :
 
     static Pipeline createPipeline(String pipelineName, Set<Task> allTasks)
 
     static Pipeline createPipeline(String pipelineName, Set<Task> allTasks, WorkGroupOptimizer optimizer)
 
-With the second method, you'll have to define your own Optimizer. This means that you define you own logic to group Tasks into WorkGroups
+With the second method, you'll have to define your own Optimizer. This means that you define you own logic to group Tasks into `WorkGroup`s
 
 
     static Task createTask(String taskName, Operation operation, List<Task> predecessors)
@@ -68,9 +68,9 @@ With the second method, you'll have to define your own Optimizer. This means tha
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4Njk2MzA2NCwtMTQyNzkxNzg4NCwxOD
-AwMTkzODIxLDE1MDM2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcw
-NDYsLTk5NzUwNTUsOTA2NTgzNTgzLC0yMDgwNDQzMjE2LDcxND
-I0NTEwMSwyMDE1MDEzNjk0LDU1NDczMDU4NywxMDQ5MDY2MzM0
-LC01NDg2MjIzNzVdfQ==
+eyJoaXN0b3J5IjpbLTIwNTI2NzcyMjYsLTE0Mjc5MTc4ODQsMT
+gwMDE5MzgyMSwxNTAzNjM3MzM0LDI3MzE4NzgwOSwtMjczNzU3
+MDQ2LC05OTc1MDU1LDkwNjU4MzU4MywtMjA4MDQ0MzIxNiw3MT
+QyNDUxMDEsMjAxNTAxMzY5NCw1NTQ3MzA1ODcsMTA0OTA2NjMz
+NCwtNTQ4NjIyMzc1XX0=
 -->
