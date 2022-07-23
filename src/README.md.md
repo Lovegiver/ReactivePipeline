@@ -79,7 +79,7 @@ When defining a Task T, what you concretely do is :
 ### The DataStreamer
 
 The DataStreamer is a hot stream, what means it potentially produces a never ending Flux.
-For the sake of demonstration, we used it as a exportable monitoring tool. This means that you can define a controller
+For the sake of demonstration, we used it as an exportable monitoring tool. This means that you can define a controller and a GET method
 
     static Flux<ServerSentEvent<String>> getAllPipelinesStatesFlux()
 
@@ -90,9 +90,9 @@ For the sake of demonstration, we used it as a exportable monitoring tool. This 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNzQ3ODY1NCw0NDQ2NjM1NjQsLTE0Mj
-c5MTc4ODQsMTgwMDE5MzgyMSwxNTAzNjM3MzM0LDI3MzE4Nzgw
-OSwtMjczNzU3MDQ2LC05OTc1MDU1LDkwNjU4MzU4MywtMjA4MD
-Q0MzIxNiw3MTQyNDUxMDEsMjAxNTAxMzY5NCw1NTQ3MzA1ODcs
-MTA0OTA2NjMzNCwtNTQ4NjIyMzc1XX0=
+eyJoaXN0b3J5IjpbLTg4NTYwODgxLDQ0NDY2MzU2NCwtMTQyNz
+kxNzg4NCwxODAwMTkzODIxLDE1MDM2MzczMzQsMjczMTg3ODA5
+LC0yNzM3NTcwNDYsLTk5NzUwNTUsOTA2NTgzNTgzLC0yMDgwND
+QzMjE2LDcxNDI0NTEwMSwyMDE1MDEzNjk0LDU1NDczMDU4Nywx
+MDQ5MDY2MzM0LC01NDg2MjIzNzVdfQ==
 -->
