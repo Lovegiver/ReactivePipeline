@@ -118,15 +118,16 @@ Operation o3 will use each single value from preceding `Flux`es by creating tupl
 
 O course, this is possible only if you have created the necessary Tasks objects around your Operations :
 
-Task t1 = ReactiveContext.createTask("Integer Flux 1", 
- 
+Task t1 = ReactiveContext.createTask("Integer Flux 1", o1, Collections.emptyList());
+Task t2 = ReactiveContext.createTask("Integer Flux 2", o2, Collections.emptyList());
+Task t3 = new Task("Sum t1 t2", operationsMap.get("Sum"), List.of(t1, t2));
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDcwODcxMjgsLTI0ODg4MDQsMTg5Nz
-E4NjI1Myw0NDQ2NjM1NjQsLTE0Mjc5MTc4ODQsMTgwMDE5Mzgy
-MSwxNTAzNjM3MzM0LDI3MzE4NzgwOSwtMjczNzU3MDQ2LC05OT
-c1MDU1LDkwNjU4MzU4MywtMjA4MDQ0MzIxNiw3MTQyNDUxMDEs
-MjAxNTAxMzY5NCw1NTQ3MzA1ODcsMTA0OTA2NjMzNCwtNTQ4Nj
-IyMzc1XX0=
+eyJoaXN0b3J5IjpbNjMyMzQ0ODQ2LC0yNDg4ODA0LDE4OTcxOD
+YyNTMsNDQ0NjYzNTY0LC0xNDI3OTE3ODg0LDE4MDAxOTM4MjEs
+MTUwMzYzNzMzNCwyNzMxODc4MDksLTI3Mzc1NzA0NiwtOTk3NT
+A1NSw5MDY1ODM1ODMsLTIwODA0NDMyMTYsNzE0MjQ1MTAxLDIw
+MTUwMTM2OTQsNTU0NzMwNTg3LDEwNDkwNjYzMzQsLTU0ODYyMj
+M3NV19
 -->
