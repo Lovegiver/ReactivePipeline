@@ -33,7 +33,7 @@ Many objects we'll talk about are wrappers. It is important to understand how th
  2. `Task` wraps a single `Operation`. It is a class with some usefull properties and methods. It triggers `Operation` execution and inject the produced `Flux` into the next `Operation` to maintain the reactive behavior.         
  3. `WorkGroup` is a wrapper for a set of `Task`s, but you won't use it directly. You will use it only if you decide to create your own `Optimizer`. If you rely on the default `Optimizer`, the `Pipeline` will create `WorkGroup`s for you. All you have to  understand about a `WorkGroup` is that it groups all `Task`s involved into the realization of a common final `Operation`.        
  4. Finally, the `Pipeline` is a wrapper for a set of `Task`s (and also for one or more `WorkGroup`s as it will dispatch all the tasks in different workgroups).
- 5. A last object to talk about is the 
+ 5. A last object to talk about is the DataStreamer. It's aside from preceding objects as it is not a wrapper but the mecanism used to export the state of all
 
 **The global philosophy is :**
 
@@ -68,9 +68,9 @@ With the second method, you'll have to define your own Optimizer. This means tha
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg3NzQ1NTg4LC0xNDI3OTE3ODg0LDE4MD
-AxOTM4MjEsMTUwMzYzNzMzNCwyNzMxODc4MDksLTI3Mzc1NzA0
-NiwtOTk3NTA1NSw5MDY1ODM1ODMsLTIwODA0NDMyMTYsNzE0Mj
-Q1MTAxLDIwMTUwMTM2OTQsNTU0NzMwNTg3LDEwNDkwNjYzMzQs
-LTU0ODYyMjM3NV19
+eyJoaXN0b3J5IjpbLTQzNDYyMzM1NiwtMTQyNzkxNzg4NCwxOD
+AwMTkzODIxLDE1MDM2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcw
+NDYsLTk5NzUwNTUsOTA2NTgzNTgzLC0yMDgwNDQzMjE2LDcxND
+I0NTEwMSwyMDE1MDEzNjk0LDU1NDczMDU4NywxMDQ5MDY2MzM0
+LC01NDg2MjIzNzVdfQ==
 -->
