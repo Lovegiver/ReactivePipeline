@@ -14,11 +14,11 @@ To start, just think about the fact that among all the operations of a particula
 
  1. **Starting operations** which do not take any arguments, thus have no *predecessors*
  2. **Ending operations** which take arguments and have no *successors*
- 3. Intermediate operations are the others : they need arguments from their predecessors and produce outputs that will be their successors' inputs
+ 3. **Intermediate operations** are the others : they need arguments from their predecessors and produce outputs that will be their successors' inputs
 
 Most of the time, we use to design and build apps containing methods which are triggered sequentially in a very procedural way. This can be represented by a straight line of processing operations : A --> B --> C --> ...
 
-But we can also imagine operations as a tree in which methods A and B are independent, so parallelized, and both producing a result which C deserves. In such a case, the C function will take result_A and result_B as arguments and we'll have to synchronize both operations in order to pass their respective results to C : C(result_A, result_B)
+But we can also imagine operations as a **tree** in which methods A and B are independent, so parallelized, and both producing a result which C deserves. In such a case, the C function will take result_A and result_B as arguments and we'll have to synchronize both operations in order to pass their respective results to C : C(result_A, result_B)
 Or, at the opposite, a A function producing a result_A which will be consumed in a parallelized manner by B and C as soon as it will be available : B(result_A) // C(result_A)
 
 To face all of these situations, we need a flexible data-structure where data - thus functions producing these data - will be organized smartly. Wrappers has been used for this to be possible.
@@ -65,7 +65,7 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MTI2MTYyMywxODAwMTkzODIxLDE1MD
+eyJoaXN0b3J5IjpbLTkyODc3NDI2MywxODAwMTkzODIxLDE1MD
 M2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcwNDYsLTk5NzUwNTUs
 OTA2NTgzNTgzLC0yMDgwNDQzMjE2LDcxNDI0NTEwMSwyMDE1MD
 EzNjk0LDU1NDczMDU4NywxMDQ5MDY2MzM0LC01NDg2MjIzNzVd
