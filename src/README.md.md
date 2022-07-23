@@ -51,10 +51,9 @@ The Pipeline class is a wrapper for a set of Tasks. You can obtain a Pipeline us
 
     static Pipeline createPipeline(String pipelineName, Set<Task> allTasks)
 
--> 
-
-
     static Pipeline createPipeline(String pipelineName, Set<Task> allTasks, WorkGroupOptimizer optimizer)
+
+With the second method, you'll have to define your own Optimizer. This means that you define you own logic to group tasks into 
 
 
     static Task createTask(String taskName, Operation operation, List<Task> predecessors)
@@ -69,9 +68,9 @@ The Pipeline class is a wrapper for a set of Tasks. You can obtain a Pipeline us
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzkxMDEyOTcsMTgwMDE5MzgyMSwxNT
-AzNjM3MzM0LDI3MzE4NzgwOSwtMjczNzU3MDQ2LC05OTc1MDU1
-LDkwNjU4MzU4MywtMjA4MDQ0MzIxNiw3MTQyNDUxMDEsMjAxNT
-AxMzY5NCw1NTQ3MzA1ODcsMTA0OTA2NjMzNCwtNTQ4NjIyMzc1
-XX0=
+eyJoaXN0b3J5IjpbOTE0NTE2NTAwLDE4MDAxOTM4MjEsMTUwMz
+YzNzMzNCwyNzMxODc4MDksLTI3Mzc1NzA0NiwtOTk3NTA1NSw5
+MDY1ODM1ODMsLTIwODA0NDMyMTYsNzE0MjQ1MTAxLDIwMTUwMT
+M2OTQsNTU0NzMwNTg3LDEwNDkwNjYzMzQsLTU0ODYyMjM3NV19
+
 -->
