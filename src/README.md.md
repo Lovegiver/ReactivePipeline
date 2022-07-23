@@ -1,4 +1,4 @@
-# Reactive pipeline : the App
+# Reactive pipeline : the App (part 2)
 
 The "*ReactivePipeline*" project is a simple interface, a single class project. You can find link to the Github repository in [Part. #1](https://dev.to/lovegiver/reactive-pipeline-a-starter-part-1-578n) of this post.
 
@@ -157,11 +157,11 @@ Lovegiver
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNDY4MzQ0MywtNzA0OTYwODAwLC0zNj
-IzMDUxNzQsMTU2Njk2MTc1OCwtMjQ4ODgwNCwxODk3MTg2MjUz
-LDQ0NDY2MzU2NCwtMTQyNzkxNzg4NCwxODAwMTkzODIxLDE1MD
-M2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcwNDYsLTk5NzUwNTUs
-OTA2NTgzNTgzLC0yMDgwNDQzMjE2LDcxNDI0NTEwMSwyMDE1MD
-EzNjk0LDU1NDczMDU4NywxMDQ5MDY2MzM0LC01NDg2MjIzNzVd
-fQ==
+eyJoaXN0b3J5IjpbOTc4NTU0Nzk1LC03MDQ5NjA4MDAsLTM2Mj
+MwNTE3NCwxNTY2OTYxNzU4LC0yNDg4ODA0LDE4OTcxODYyNTMs
+NDQ0NjYzNTY0LC0xNDI3OTE3ODg0LDE4MDAxOTM4MjEsMTUwMz
+YzNzMzNCwyNzMxODc4MDksLTI3Mzc1NzA0NiwtOTk3NTA1NSw5
+MDY1ODM1ODMsLTIwODA0NDMyMTYsNzE0MjQ1MTAxLDIwMTUwMT
+M2OTQsNTU0NzMwNTg3LDEwNDkwNjYzMzQsLTU0ODYyMjM3NV19
+
 -->
