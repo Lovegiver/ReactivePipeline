@@ -87,13 +87,15 @@ For the sake of demonstration, we used it as an exportable monitoring tool. This
 
 In the case you define multiple Pipelines, the DataStreamer can produces a Flux for all of them or a single one. For a single Pipeline, you'll use the second method.
 
-## Other usefull objects
+## Other useful objects
+
+Other useful objects are not directly accessible through the ReactiveContext class.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NzE4NjI1Myw0NDQ2NjM1NjQsLTE0Mj
-c5MTc4ODQsMTgwMDE5MzgyMSwxNTAzNjM3MzM0LDI3MzE4Nzgw
-OSwtMjczNzU3MDQ2LC05OTc1MDU1LDkwNjU4MzU4MywtMjA4MD
-Q0MzIxNiw3MTQyNDUxMDEsMjAxNTAxMzY5NCw1NTQ3MzA1ODcs
-MTA0OTA2NjMzNCwtNTQ4NjIyMzc1XX0=
+eyJoaXN0b3J5IjpbMzc0MTUxNzQwLDE4OTcxODYyNTMsNDQ0Nj
+YzNTY0LC0xNDI3OTE3ODg0LDE4MDAxOTM4MjEsMTUwMzYzNzMz
+NCwyNzMxODc4MDksLTI3Mzc1NzA0NiwtOTk3NTA1NSw5MDY1OD
+M1ODMsLTIwODA0NDMyMTYsNzE0MjQ1MTAxLDIwMTUwMTM2OTQs
+NTU0NzMwNTg3LDEwNDkwNjYzMzQsLTU0ODYyMjM3NV19
 -->
