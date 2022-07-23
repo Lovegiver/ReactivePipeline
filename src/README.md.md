@@ -91,11 +91,15 @@ In the case you define multiple Pipelines, the DataStreamer can produces a Flux 
 
 Other useful objects are not directly accessible through the ReactiveContext class.
 
+### Operation
+
+As already said, Operation is the corner-stone of this API. This interface is used to define you domain's logic. As it is a Functional I
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc0MTUxNzQwLDE4OTcxODYyNTMsNDQ0Nj
-YzNTY0LC0xNDI3OTE3ODg0LDE4MDAxOTM4MjEsMTUwMzYzNzMz
-NCwyNzMxODc4MDksLTI3Mzc1NzA0NiwtOTk3NTA1NSw5MDY1OD
-M1ODMsLTIwODA0NDMyMTYsNzE0MjQ1MTAxLDIwMTUwMTM2OTQs
-NTU0NzMwNTg3LDEwNDkwNjYzMzQsLTU0ODYyMjM3NV19
+eyJoaXN0b3J5IjpbMTExMTc5NDM3NCwxODk3MTg2MjUzLDQ0ND
+Y2MzU2NCwtMTQyNzkxNzg4NCwxODAwMTkzODIxLDE1MDM2Mzcz
+MzQsMjczMTg3ODA5LC0yNzM3NTcwNDYsLTk5NzUwNTUsOTA2NT
+gzNTgzLC0yMDgwNDQzMjE2LDcxNDI0NTEwMSwyMDE1MDEzNjk0
+LDU1NDczMDU4NywxMDQ5MDY2MzM0LC01NDg2MjIzNzVdfQ==
 -->
