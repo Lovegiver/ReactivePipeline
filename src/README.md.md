@@ -2,7 +2,7 @@
 
 The "*ReactivePipeline*" project is a simple interface, a single class project. You can find link to the Github repository in [Part. #1](https://dev.to/lovegiver/reactive-pipeline-a-starter-part-1-578n) of this post.
 
-The `ReactiveContext` class just contains the *static methods* we need to instantiate the necessary objects for creating a persistent Flux pipeline for your whole application.
+The `ReactiveContext` class just contains the *static methods* we need to instantiate the necessary objects for creating a persistent `Flux` *pipeline* for your whole application.
 We will see each of them in the first part of this document.
 
 Nevertheless, these methods / objects are not the only ones that are required to build a reactive app.
@@ -33,7 +33,7 @@ Many objects we'll talk about are wrappers. It is important to understand how th
  2. `Task` wraps a single `Operation`. It is a class with some usefull properties and methods. It triggers `Operation` execution and inject the produced `Flux` into the next `Operation` to maintain the reactive behavior.         
  3. `WorkGroup` is a wrapper for a set of `Task`s, but you won't use it directly. You will use it only if you decide to create your own `Optimizer`. If you rely on the default `Optimizer`, the `Pipeline` will create `WorkGroup`s for you. All you have to  understand about a `WorkGroup` is that it groups all `Task`s involved into the realization of a common final `Operation`.        
  4. Finally, the `Pipeline` is a wrapper for a set of `Task`s (and also for one or more `WorkGroup`s as it will dispatch all the tasks in different workgroups).
- 5. A last object to talk about is the `DataStreamer`. It's aside from preceding objects as it is not a wrapper but the mecanism used to export the state of all `Monitorable` classes : `Task`, `WorkGroup` and `Pipeline` all have a `Monitor` property that describes their current state (new, running, done, in error). The `DataStreamer` produces a `Flux` containing all the states of all objects within the `Pipeline`. Each time one's state changes, a tick is triggered by a `Notifier` which in turn triggers a new `Flux` that can, for example, be displayed on a web page for monitoring purpose. But it can be whatever you need. This is just the way I've chosen to talk about what is known under the ***hot stream*** name.
+ 5. A last object to talk about is the `DataStreamer`. It's aside from preceding objects as it is not a wrapper but the mecanism used to export the state of all `Monitorable` classes : `Task`, `WorkGroup` and `Pipeline` all have a `Monitor` property that describes their current state (new, running, done, in error). The `DataStreamer` produces a `Flux` containing all the states of all objects within the `Pipeline`. Each time one's state changes, a tick is triggered by a `Notifier` to the `DataStreamer`, which in turn triggers a new `Flux` that can, for example, be displayed on a web page for monitoring purpose. But it can be whatever you need. This is just the way I've chosen to talk about what is known under the ***hot stream*** name.
 
 **The global philosophy is :**
 
@@ -68,9 +68,9 @@ With the second method, you'll have to define your own Optimizer. This means tha
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjY1MDYxNzIsLTE0Mjc5MTc4ODQsMT
-gwMDE5MzgyMSwxNTAzNjM3MzM0LDI3MzE4NzgwOSwtMjczNzU3
-MDQ2LC05OTc1MDU1LDkwNjU4MzU4MywtMjA4MDQ0MzIxNiw3MT
-QyNDUxMDEsMjAxNTAxMzY5NCw1NTQ3MzA1ODcsMTA0OTA2NjMz
-NCwtNTQ4NjIyMzc1XX0=
+eyJoaXN0b3J5IjpbMTQxODk3MTc1NSwtMTQyNzkxNzg4NCwxOD
+AwMTkzODIxLDE1MDM2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcw
+NDYsLTk5NzUwNTUsOTA2NTgzNTgzLC0yMDgwNDQzMjE2LDcxND
+I0NTEwMSwyMDE1MDEzNjk0LDU1NDczMDU4NywxMDQ5MDY2MzM0
+LC01NDg2MjIzNzVdfQ==
 -->
