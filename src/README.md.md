@@ -93,13 +93,17 @@ Other useful objects are not directly accessible through the ReactiveContext cla
 
 ### Operation
 
-As already said, Operation is the corner-stone of this API. This interface is used to define you domain's logic. As it is a Functional I
+As already said, Operation is the corner-stone of this API. This interface is used to define you domain's logic. As it is a Functional Interface, you can use it as a Lambda expression.
+
+    Flux<?> process(Flux<?>... inputs) throws TaskExecutionException;
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMTc5NDM3NCwxODk3MTg2MjUzLDQ0ND
-Y2MzU2NCwtMTQyNzkxNzg4NCwxODAwMTkzODIxLDE1MDM2Mzcz
-MzQsMjczMTg3ODA5LC0yNzM3NTcwNDYsLTk5NzUwNTUsOTA2NT
-gzNTgzLC0yMDgwNDQzMjE2LDcxNDI0NTEwMSwyMDE1MDEzNjk0
-LDU1NDczMDU4NywxMDQ5MDY2MzM0LC01NDg2MjIzNzVdfQ==
+eyJoaXN0b3J5IjpbLTI0ODg4MDQsMTg5NzE4NjI1Myw0NDQ2Nj
+M1NjQsLTE0Mjc5MTc4ODQsMTgwMDE5MzgyMSwxNTAzNjM3MzM0
+LDI3MzE4NzgwOSwtMjczNzU3MDQ2LC05OTc1MDU1LDkwNjU4Mz
+U4MywtMjA4MDQ0MzIxNiw3MTQyNDUxMDEsMjAxNTAxMzY5NCw1
+NTQ3MzA1ODcsMTA0OTA2NjMzNCwtNTQ4NjIyMzc1XX0=
 -->
