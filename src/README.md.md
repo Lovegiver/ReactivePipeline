@@ -1,6 +1,6 @@
 # Reactive pipeline : the App
 
-The "*ReactivePipeline*" project is a simple interface, a single class project. You can find link to the Github repository in Part. #1 of this post.
+The "*ReactivePipeline*" project is a simple interface, a single class project. You can find link to the Github repository in [Part. #1](https://dev.to/lovegiver/reactive-pipeline-a-starter-part-1-578n) of this post.
 
 The `ReactiveContext` class just contains the *static methods* we need to instantiate the necessary objects for creating a persistent Flux pipeline for your whole application.
 We will see each of them in the first part of this document.
@@ -29,13 +29,11 @@ To face all of these situations, we need a flexible data-structure where data - 
 
 Many objects we'll talk about are wrappers. It is important to understand how they interact with each others.
 
- 1. `Operation` is *the corner stone of our model*. It is a `Functional Interface`. Each action, each method, each function, has to be an `Operation`. An `Operation` takes a *varargs* of `Flux`(es) as arguments and produces a `Flux`. 
-    
- 2. `Task` wraps a single `Operation`. It is a class with some usefull properties and methods. It triggers `Operation` execution and inject the produced `Flux` into the next `Operation` to maintain the reactive behavior. 
-        
- 3. `WorkGroup` is a wrapper for a set of `Task`s, but you won't use it directly. You will use it only if you decide to create your own `Optimizer`. If you rely on the default `Optimizer`, the `Pipeline` will create `WorkGroup`s for you. All you have to  understand about a `WorkGroup` is that it groups all `Task`s involved into the realization of a common final `Operation`.
-        
+ 1. `Operation` is *the corner stone of our model*. It is a `Functional Interface`. Each action, each method, each function, has to be an `Operation`. An `Operation` takes a *varargs* of `Flux`(es) as arguments and produces a `Flux`.     
+ 2. `Task` wraps a single `Operation`. It is a class with some usefull properties and methods. It triggers `Operation` execution and inject the produced `Flux` into the next `Operation` to maintain the reactive behavior.         
+ 3. `WorkGroup` is a wrapper for a set of `Task`s, but you won't use it directly. You will use it only if you decide to create your own `Optimizer`. If you rely on the default `Optimizer`, the `Pipeline` will create `WorkGroup`s for you. All you have to  understand about a `WorkGroup` is that it groups all `Task`s involved into the realization of a common final `Operation`.        
  4. Finally, the `Pipeline` is a wrapper for a set of `Task`s (and also for one or more `WorkGroup`s as it will dispatch all the tasks in different workgroups).
+ 5. A last object to talk about is the 
 
 **The global philosophy is :**
 
@@ -70,9 +68,9 @@ With the second method, you'll have to define your own Optimizer. This means tha
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mjc5MTc4ODQsMTgwMDE5MzgyMSwxNT
-AzNjM3MzM0LDI3MzE4NzgwOSwtMjczNzU3MDQ2LC05OTc1MDU1
-LDkwNjU4MzU4MywtMjA4MDQ0MzIxNiw3MTQyNDUxMDEsMjAxNT
-AxMzY5NCw1NTQ3MzA1ODcsMTA0OTA2NjMzNCwtNTQ4NjIyMzc1
-XX0=
+eyJoaXN0b3J5IjpbOTg3NzQ1NTg4LC0xNDI3OTE3ODg0LDE4MD
+AxOTM4MjEsMTUwMzYzNzMzNCwyNzMxODc4MDksLTI3Mzc1NzA0
+NiwtOTk3NTA1NSw5MDY1ODM1ODMsLTIwODA0NDMyMTYsNzE0Mj
+Q1MTAxLDIwMTUwMTM2OTQsNTU0NzMwNTg3LDEwNDkwNjYzMzQs
+LTU0ODYyMjM3NV19
 -->
