@@ -141,14 +141,17 @@ The Monitor is a class holding the inner state of any Monitorable object. Like w
  - WorkGroup
  - Task
 
+The Monitorable class is the abstract part from which the 3 above objects are derived. Its properties are :
+
+ - Monitor monit
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTE5OTY1MTUsLTcwNDk2MDgwMCwtMz
-YyMzA1MTc0LDE1NjY5NjE3NTgsLTI0ODg4MDQsMTg5NzE4NjI1
-Myw0NDQ2NjM1NjQsLTE0Mjc5MTc4ODQsMTgwMDE5MzgyMSwxNT
-AzNjM3MzM0LDI3MzE4NzgwOSwtMjczNzU3MDQ2LC05OTc1MDU1
-LDkwNjU4MzU4MywtMjA4MDQ0MzIxNiw3MTQyNDUxMDEsMjAxNT
-AxMzY5NCw1NTQ3MzA1ODcsMTA0OTA2NjMzNCwtNTQ4NjIyMzc1
-XX0=
+eyJoaXN0b3J5IjpbMTIxNDg0ODI0MiwtNzA0OTYwODAwLC0zNj
+IzMDUxNzQsMTU2Njk2MTc1OCwtMjQ4ODgwNCwxODk3MTg2MjUz
+LDQ0NDY2MzU2NCwtMTQyNzkxNzg4NCwxODAwMTkzODIxLDE1MD
+M2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcwNDYsLTk5NzUwNTUs
+OTA2NTgzNTgzLC0yMDgwNDQzMjE2LDcxNDI0NTEwMSwyMDE1MD
+EzNjk0LDU1NDczMDU4NywxMDQ5MDY2MzM0LC01NDg2MjIzNzVd
+fQ==
 -->
