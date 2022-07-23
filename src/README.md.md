@@ -14,7 +14,7 @@ To start, just think about the fact that among all the operations of a particula
 
  1. Starting operations which do not take any arguments, thus have no predecessors
  2. Ending operations which take arguments and have no successors
- 3. Interme
+ 3. Intermediate operations are the others : they need arguments from their predecessors and produce outputs that will be their successors' inputs
 
 Most of the time, we use to design and build apps containing methods which are triggered sequentially in a very procedural way. This can be represented by a straight line of processing operations : A --> B --> C --> ...
 
@@ -65,8 +65,8 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzI1ODM1MjUsMjczMTg3ODA5LC0yNz
-M3NTcwNDYsLTk5NzUwNTUsOTA2NTgzNTgzLC0yMDgwNDQzMjE2
-LDcxNDI0NTEwMSwyMDE1MDEzNjk0LDU1NDczMDU4NywxMDQ5MD
-Y2MzM0LC01NDg2MjIzNzVdfQ==
+eyJoaXN0b3J5IjpbMTUwMzYzNzMzNCwyNzMxODc4MDksLTI3Mz
+c1NzA0NiwtOTk3NTA1NSw5MDY1ODM1ODMsLTIwODA0NDMyMTYs
+NzE0MjQ1MTAxLDIwMTUwMTM2OTQsNTU0NzMwNTg3LDEwNDkwNj
+YzMzQsLTU0ODYyMjM3NV19
 -->
