@@ -65,7 +65,7 @@ The existing default `Optimizer`'s logic is very basic and may be hugely improve
 
 ### The Task
 
-The Task is the Operation's wrapper. The Operation defin
+The `Task` is the `Operation`'s wrapper. The `Operation` defines the domain's *logic* whereas the `Task` organize the interactions with other Operations.
 
 
 
@@ -81,7 +81,7 @@ The Task is the Operation's wrapper. The Operation defin
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NjE0MjM0Niw0NDQ2NjM1NjQsLTE0Mj
+eyJoaXN0b3J5IjpbMTIzMzQzMzY4NSw0NDQ2NjM1NjQsLTE0Mj
 c5MTc4ODQsMTgwMDE5MzgyMSwxNTAzNjM3MzM0LDI3MzE4Nzgw
 OSwtMjczNzU3MDQ2LC05OTc1MDU1LDkwNjU4MzU4MywtMjA4MD
 Q0MzIxNiw3MTQyNDUxMDEsMjAxNTAxMzY5NCw1NTQ3MzA1ODcs
