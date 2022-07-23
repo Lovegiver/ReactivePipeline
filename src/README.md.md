@@ -116,15 +116,17 @@ Operation o3 will use each single value from preceding `Flux`es by creating tupl
  - (3, 93) will produce 96
  - etc.
 
-O course, this is possible only if you have created the necessary Tasks objects around your Operations :
+Of course, this is possible only if you have created the necessary Tasks objects around your Operations :
 
-Task t1 = ReactiveContext.createTask("Integer Flux 1", o1, Collections.emptyList());
-Task t2 = ReactiveContext.createTask("Integer Flux 2", o2, Collections.emptyList());
-Task t3 = new Task("Sum t1 t2", operationsMap.get("Sum"), List.of(t1, t2));
+    Task t1 = ReactiveContext.createTask("Integer Flux 1", o1, Collections.emptyList());
+    Task t2 = ReactiveContext.createTask("Integer Flux 2", o2, Collections.emptyList());
+    Task t3 = new Task("Sum t1 t2", o3, List.of(t1, t2));
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMyMzQ0ODQ2LC0yNDg4ODA0LDE4OTcxOD
+eyJoaXN0b3J5IjpbMzEzNTY3NTYyLC0yNDg4ODA0LDE4OTcxOD
 YyNTMsNDQ0NjYzNTY0LC0xNDI3OTE3ODg0LDE4MDAxOTM4MjEs
 MTUwMzYzNzMzNCwyNzMxODc4MDksLTI3Mzc1NzA0NiwtOTk3NT
 A1NSw5MDY1ODM1ODMsLTIwODA0NDMyMTYsNzE0MjQ1MTAxLDIw
