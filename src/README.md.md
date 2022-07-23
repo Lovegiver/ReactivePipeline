@@ -29,7 +29,7 @@ To face all of these situations, we need a flexible data-structure where data - 
 
 Many objects we'll talk about are wrappers. It is important to understand how they interact with each others.
 
- 1. `Operation` is the corner stone of our model. It is a `Functional Interface`. Each action, each method, each function, has to be an `Operation`. An `Operation` takes a *varargs* of `Flux`(es) as arguments and produces a `Flux`. 
+ 1. `Operation` is *the corner stone of our model*. It is a `Functional Interface`. Each action, each method, each function, has to be an `Operation`. An `Operation` takes a *varargs* of `Flux`(es) as arguments and produces a `Flux`. 
     
  2. `Task` wraps a single `Operation`. It is a class with some usefull properties and methods. It triggers `Operation` execution and inject the produced `Flux` into the next `Operation` to maintain the reactive behavior. 
         
@@ -65,9 +65,9 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyODc3NDI2MywxODAwMTkzODIxLDE1MD
-M2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcwNDYsLTk5NzUwNTUs
-OTA2NTgzNTgzLC0yMDgwNDQzMjE2LDcxNDI0NTEwMSwyMDE1MD
-EzNjk0LDU1NDczMDU4NywxMDQ5MDY2MzM0LC01NDg2MjIzNzVd
-fQ==
+eyJoaXN0b3J5IjpbLTIwNTE5MzA2OTcsMTgwMDE5MzgyMSwxNT
+AzNjM3MzM0LDI3MzE4NzgwOSwtMjczNzU3MDQ2LC05OTc1MDU1
+LDkwNjU4MzU4MywtMjA4MDQ0MzIxNiw3MTQyNDUxMDEsMjAxNT
+AxMzY5NCw1NTQ3MzA1ODcsMTA0OTA2NjMzNCwtNTQ4NjIyMzc1
+XX0=
 -->
