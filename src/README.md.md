@@ -53,7 +53,7 @@ You can obtain a `Pipeline` using :
 
     static Pipeline createPipeline(String pipelineName, Set<Task> allTasks, WorkGroupOptimizer optimizer)
 
-With the second method, you'll have to define your own `Optimizer`. This means that you define you own logic to group Tasks into `WorkGroup`s. In order to define your own Optimizer, you'll have to implement the following Functional Interface :
+With the second method, you'll have to define your own `Optimizer`. This means that you define you own logic to group Tasks into `WorkGroup`s. In order to define your own `Optimizer`, you'll have to implement the following Functional Interface :
 
     Collection<WorkGroup> optimize(Set<Task> allTasks)
 
@@ -77,9 +77,9 @@ The existing default `Optimizer`'s logic is very basic and may be hugely improve
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM4MTEyMTg4LDQ0NDY2MzU2NCwtMTQyNz
-kxNzg4NCwxODAwMTkzODIxLDE1MDM2MzczMzQsMjczMTg3ODA5
-LC0yNzM3NTcwNDYsLTk5NzUwNTUsOTA2NTgzNTgzLC0yMDgwND
-QzMjE2LDcxNDI0NTEwMSwyMDE1MDEzNjk0LDU1NDczMDU4Nywx
-MDQ5MDY2MzM0LC01NDg2MjIzNzVdfQ==
+eyJoaXN0b3J5IjpbMTE0OTE0OTM2Miw0NDQ2NjM1NjQsLTE0Mj
+c5MTc4ODQsMTgwMDE5MzgyMSwxNTAzNjM3MzM0LDI3MzE4Nzgw
+OSwtMjczNzU3MDQ2LC05OTc1MDU1LDkwNjU4MzU4MywtMjA4MD
+Q0MzIxNiw3MTQyNDUxMDEsMjAxNTAxMzY5NCw1NTQ3MzA1ODcs
+MTA0OTA2NjMzNCwtNTQ4NjIyMzc1XX0=
 -->
