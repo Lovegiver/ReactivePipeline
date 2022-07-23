@@ -39,9 +39,9 @@ Many objects we'll talk about are wrappers. It is important to understand how th
 
 The global philosophy is :
 
- 1. We create all necessary Operations. Try to think this object as a pure function, doing just one thing.
- 2. Each Operation is wrapped in a Task object. To be instantiated, a Task must have a single Operation and a Set of all the previous Tasks whom produced Fluxes are arguments for this Task.
- 3. All the Tasks will finally be used as arguments for a Pipeline. The Pipeline, thanks to its Optimizer, create one or more WorkGroups. Once this is made, all WorkGroups will be executed in parallel threads and in an asynchronous manner.
+ 1. We create all necessary `Operation`s. Try to think this object as a pure function, doing just one thing.
+ 2. Each `Operation` is wrapped in a `Task` object. To be instantiated, a `Task` must have a single `Operation` and a Set of all the *previous* `Task`s whom produced `Flux`es are arguments for this `Task`.
+ 3. All the `Task`s will finally be used as arguments for a Pipeline. The Pipeline, thanks to its Optimizer, create one or more WorkGroups. Once this is made, all WorkGroups will be executed in parallel threads and in an asynchronous manner.
 
 ### The Pipeline
 
@@ -65,8 +65,9 @@ The Pipeline class is a wrapper for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMDE5MzgyMSwxNTAzNjM3MzM0LDI3Mz
-E4NzgwOSwtMjczNzU3MDQ2LC05OTc1MDU1LDkwNjU4MzU4Mywt
-MjA4MDQ0MzIxNiw3MTQyNDUxMDEsMjAxNTAxMzY5NCw1NTQ3Mz
-A1ODcsMTA0OTA2NjMzNCwtNTQ4NjIyMzc1XX0=
+eyJoaXN0b3J5IjpbLTY4Mjc5ODkxNSwxODAwMTkzODIxLDE1MD
+M2MzczMzQsMjczMTg3ODA5LC0yNzM3NTcwNDYsLTk5NzUwNTUs
+OTA2NTgzNTgzLC0yMDgwNDQzMjE2LDcxNDI0NTEwMSwyMDE1MD
+EzNjk0LDU1NDczMDU4NywxMDQ5MDY2MzM0LC01NDg2MjIzNzVd
+fQ==
 -->
