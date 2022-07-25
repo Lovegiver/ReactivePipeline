@@ -49,13 +49,17 @@ The Pipeline class is a wrapper for a set of Tasks. When calling its `.execute()
 
 You can obtain a `Pipeline` using :
 
+``` java
     static Pipeline createPipeline(String pipelineName, Set<Task> allTasks)
 
     static Pipeline createPipeline(String pipelineName, Set<Task> allTasks, WorkGroupOptimizer optimizer)
+``` 
 
 With the second method, you'll have to define your own `Optimizer`. This means that you define you own logic to group Tasks into `WorkGroup`s. In order to define your own `Optimizer`, you'll have to implement the following `Functional Interface` :
 
+``` java
     Collection<WorkGroup> optimize(Set<Task> allTasks)
+``` 
 
 
 The existing default `Optimizer`'s logic is very basic and may be hugely improved and optimized (it is part of my To-Do list).
@@ -69,7 +73,9 @@ The `Task` is the `Operation`'s wrapper. The `Operation` defines the domain's *l
 This is why the `Task` takes a `List<Task>` as argument. 
 
 
+``` java
     static Task createTask(String taskName, Operation operation, List<Task> predecessors)
+``` 
 
 When defining a Task T, what you concretely do is :
 
@@ -81,9 +87,11 @@ When defining a Task T, what you concretely do is :
 The `DataStreamer` produces a ***hot stream***, a potentially **never ending** `Flux`.
 For the sake of demonstration, we used it as an exportable monitoring tool. This means that you can define a *REST controller* and a GET method returning a `Flux<ServerSentEvent>` that will be consumed by a web app.
 
+``` java
     static Flux<ServerSentEvent<String>> getAllPipelinesStatesFlux()
 
     static Flux<ServerSentEvent<String>> getSinglePipelineStatesFlux(Pipeline pipeline)
+``` 
 
 In the case you define multiple Pipelines, the DataStreamer can produces a Flux for all of them or a single one. For a single Pipeline, you'll use the second method.
 
@@ -95,10 +103,13 @@ Other useful objects are not directly accessible through the `ReactiveContext` c
 
 As already said, `Operation` is the corner-stone of this API. This interface is used to define you domain's logic. As it is a `Functional Interface`, you can use it as a Lambda expression.
 
+``` java
     Flux<?> process(Flux<?>... inputs) throws TaskExecutionException;
+``` 
 
 We can take some frustrating examples to show how to use it :
 
+``` java
     Operation o1 = inputs -> Flux.range(1,10);
     Operation o2 = inputs -> Flux.range(91,100);
     Operation o3 = inputs -> {  
@@ -106,6 +117,7 @@ We can take some frustrating examples to show how to use it :
       Flux<?> int2 = inputs[1];  
       return Flux.zip(int1, int2, (x, y) -> (int) x + (int) y);  
     };
+``` 
 
 Operation o1 will produce a `Flux<Integer>` : 1, 2, 3... 10
 Operation o2 will produce a `Flux<Integer>` : 91, 92, 93... 100
@@ -118,9 +130,11 @@ Operation o3 will use each single value from preceding `Flux`es by creating tupl
 
 Of course, this is possible only if you have created the necessary Tasks objects around your Operations :
 
+``` java
     Task t1 = ReactiveContext.createTask("Integer Flux 1", o1, Collections.emptyList());
     Task t2 = ReactiveContext.createTask("Integer Flux 2", o2, Collections.emptyList());
     Task t3 = ReactiveContext.createTask("Sum t1 t2", o3, List.of(t1, t2));
+```
 
 There's many things to say here.
 
@@ -143,10 +157,12 @@ The `Monitor` is a class holding the inner state of any `Monitorable` object. Li
 
 The `Monitorable` class is the *mother class* from which the 3 above objects are derived. Its properties are :
 
+``` java
     String name;
     Monitor monitor;
     Notifier notifier;
     Map<Task, Optional<Flux<?>>> inputFluxesMap = Collections.synchronizedMap(new LinkedHashMap<>());
+```
 
 This last property is a central part of our system. We actually use it exclusively for `Task`s management, but it also could be used for `WorkGroup`s with an adapted `Optimizer`.
 You may have noticed that our `Monitorable`s are designed like a *Composite* object. Thus, not only `Task`s may receive `Flux`es as arguments from predecessors, but also `WorkGroup`s. This is still a work-in-progress that will be solved with a non-basic `Optimizer`.

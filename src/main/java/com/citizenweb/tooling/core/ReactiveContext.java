@@ -1,6 +1,8 @@
 package com.citizenweb.tooling.core;
 
 import com.citizenweb.tooling.taskpipeline.core.model.*;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.codec.ServerSentEvent;
 import reactor.core.publisher.Flux;
@@ -9,11 +11,10 @@ import java.util.List;
 import java.util.Set;
 
 @Slf4j
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class ReactiveContext {
 
     private static final DataStreamer dataStreamer = DataStreamer.getInstance();
-
-    public ReactiveContext() {}
 
     static Pipeline createPipeline(String pipelineName, Set<Task> allTasks) {
         return new Pipeline(pipelineName, allTasks);
